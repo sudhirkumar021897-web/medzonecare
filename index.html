@@ -1,106 +1,67 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Medzone Healthcare Advisors</title>
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
+<title>Medzone Healthcare Advisors | NABH Consultancy</title>
 
-<header>
-<div class="logo"><span>+</span> Medzone</div>
-<nav>
-<a href="index.html">Home</a>
-<a href="services.html">Services</a>
-<a href="contact.html">Contact</a>
-</nav>
-</header>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
-<section class="hero">
-<div>
-<h1>Welcome to Medzone Healthcare Advisors</h1>
-<p>Professional NABH Accreditation & Compliance Consultancy</p>
-<a href="services.html" class="btn">Learn More</a>
-</div>
-</section>
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins', sans-serif;
+}
 
-<section class="stats">
-<div>
-<h3 data-target="150">0</h3>
-<p>Hospitals Served</p>
-</div>
-<div>
-<h3 data-target="12">0</h3>
-<p>States Covered</p>
-</div>
-<div>
-<h3 data-target="100">0</h3>
-<p>% Success Rate</p>
-</div>
-</section>
+body{
+background:#0d0d0d;
+color:#fff;
+line-height:1.6;
+}
 
-<section class="section">
-<div class="grid">
+/* NAVIGATION */
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:#000;
+position:fixed;
+width:100%;
+top:0;
+z-index:1000;
+box-shadow:0 2px 10px rgba(255,0,0,0.3);
+}
 
-<div class="card">
-<img src="service1.jpg">
-<div class="card-content">
-<h3>Compliance Checklist</h3>
-<p>Complete gap analysis & documentation.</p>
-<a href="entry-level.html" class="btn">Learn More</a>
-</div>
-</div>
+nav h2{
+color:#ff0000;
+font-weight:800;
+font-size:24px;
+}
 
-<div class="card">
-<img src="service2.jpg">
-<div class="card-content">
-<h3>Detailed Hospital Review</h3>
-<p>On-site audit and quality implementation.</p>
-<a href="full-accreditation.html" class="btn">Learn More</a>
-</div>
-</div>
+nav ul{
+display:flex;
+list-style:none;
+}
 
-<div class="card">
-<img src="service3.jpg">
-<div class="card-content">
-<h3>Dental NABH</h3>
-<p>Specialized consultancy for dental clinics.</p>
-<a href="dental-nabh.html" class="btn">Learn More</a>
-</div>
-</div>
+nav ul li{
+margin-left:30px;
+}
 
-</div>
-</section>
+nav ul li a{
+text-decoration:none;
+color:#fff;
+font-weight:500;
+transition:0.3s;
+}
 
-<footer>
-<div class="footer-grid">
-<div>
-<h4>Home</h4>
-<a href="#">About</a>
-<a href="#">Services</a>
-</div>
+nav ul li a:hover{
+color:#ff0000;
+}
 
-<div>
-<h4>Services</h4>
-<a href="entry-level.html">Entry Level</a>
-<a href="full-accreditation.html">Full Accreditation</a>
-<a href="dental-nabh.html">Dental NABH</a>
-</div>
-
-<div>
-<h4>Contact</h4>
-<p>+91 7888926396</p>
-<p>medzone@gmail.com</p>
-</div>
-</div>
-
-<div class="copy">
-© Medzone Healthcare Advisors
-</div>
-</footer>
-
-<a href="https://wa.me/917888926396" class="whatsapp">💬</a>
-<script src="script.js"></script>
-</body>
-</html>
+/* HERO SECTION */
+.hero{
+height:100vh;
+background:url('hero.jpg') center/cover no-repeat
