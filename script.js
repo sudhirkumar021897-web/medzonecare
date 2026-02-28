@@ -1,0 +1,1 @@
+console.log("Medzone Website Loaded Successfully");
