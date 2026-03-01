@@ -7,6 +7,8 @@
 
 <title>Medzone Health Care Advisors | One Zone For Healthcare</title>
 
+<meta name="description" content="Medzone Health Care Advisors provides NABH accreditation, empanelment, Fire NOC, Pollution Control, Legal Compliance and Healthcare IT solutions.">
+
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 
 <style>
@@ -28,7 +30,7 @@ color:var(--text);
 line-height:1.7;
 }
 
-/* NAVIGATION */
+/* NAVBAR */
 nav{
 background:var(--primary);
 padding:18px 8%;
@@ -84,7 +86,6 @@ nav ul li a:hover{
 color:var(--gold);
 }
 
-/* MOBILE MENU */
 .menu-toggle{
 display:none;
 font-size:26px;
@@ -193,6 +194,18 @@ padding:20px;
 margin-bottom:10px;
 }
 
+/* FAQ */
+.faq-item{
+max-width:800px;
+margin:20px auto;
+text-align:left;
+}
+
+.faq-item h4{
+margin-bottom:8px;
+color:var(--primary);
+}
+
 /* CONTACT */
 .contact-form{
 max-width:600px;
@@ -244,10 +257,6 @@ width:60px;
 
 @media(max-width:768px){
 
-nav{
-padding:18px 6%;
-}
-
 .menu-toggle{
 display:block;
 }
@@ -266,7 +275,7 @@ transition:max-height 0.4s ease;
 }
 
 nav ul.show{
-max-height:300px;
+max-height:400px;
 }
 
 nav ul li{
@@ -327,13 +336,14 @@ font-size:30px;
 
 <section id="services" class="section light-bg">
 <h2>Our Comprehensive Healthcare Services</h2>
+
 <div class="services">
 
 <div class="service-card">
 <img src="images/accreditation.jpg">
 <div class="service-content">
 <h3>Accreditation Excellence</h3>
-<p>NABH Entry Level, Full NABH, NABL and ISO certifications with structured documentation and audit readiness.</p>
+<p>NABH Entry Level, Full NABH, NABL and ISO certifications.</p>
 </div>
 </div>
 
@@ -341,7 +351,7 @@ font-size:30px;
 <img src="images/empanelment.jpg">
 <div class="service-content">
 <h3>Strategic Empanelment Support</h3>
-<p>Insurance, CGHS, ECHS, Ayushman Bharat and government panel documentation & approvals.</p>
+<p>Insurance & government panel approvals.</p>
 </div>
 </div>
 
@@ -349,7 +359,31 @@ font-size:30px;
 <img src="images/legal.jpg">
 <div class="service-content">
 <h3>Legal and Compliance Support</h3>
-<p>Fire NOC, Pollution Control Board and statutory healthcare registrations.</p>
+<p>Healthcare licenses and statutory documentation.</p>
+</div>
+</div>
+
+<div class="service-card">
+<img src="images/fire.jpg">
+<div class="service-content">
+<h3>Fire & Safety Compliance</h3>
+<p>Fire NOC and safety audits.</p>
+</div>
+</div>
+
+<div class="service-card">
+<img src="images/pollution.jpg">
+<div class="service-content">
+<h3>Pollution Control & Biomedical Waste</h3>
+<p>PCB approvals and biomedical compliance.</p>
+</div>
+</div>
+
+<div class="service-card">
+<img src="images/healthcareit.jpg">
+<div class="service-content">
+<h3>Healthcare IT & Systems</h3>
+<p>Hospital software and digital compliance systems.</p>
 </div>
 </div>
 
@@ -358,7 +392,7 @@ font-size:30px;
 
 <section id="about" class="section">
 <h2>About Medzone</h2>
-<p>Medzone Health Care Advisors provides structured accreditation, compliance and operational solutions ensuring hospitals remain audit-ready, compliant and growth-focused.</p>
+<p>We provide structured healthcare accreditation, compliance and operational solutions ensuring hospitals remain audit-ready and growth-focused.</p>
 </section>
 
 <section id="contact" class="section light-bg">
@@ -374,6 +408,15 @@ font-size:30px;
 </form>
 </div>
 
+<p style="margin-top:30px;">
+📞 +91 78889 26396<br>
+📍 Zirakpur | Punjab<br>
+✉ medzonehealthcareadvisors@gmail.com
+</p>
+
+<iframe src="https://www.google.com/maps?q=Zirakpur,Punjab&output=embed"
+width="100%" height="300" style="border:0;margin-top:30px;" allowfullscreen=""></iframe>
+
 </section>
 
 <footer>
@@ -387,9 +430,17 @@ font-size:30px;
 </a>
 
 <script>
+const navLinks = document.getElementById("nav-links");
+
 function toggleMenu(){
-document.getElementById("nav-links").classList.toggle("show");
+navLinks.classList.toggle("show");
 }
+
+document.querySelectorAll("#nav-links a").forEach(link => {
+link.addEventListener("click", () => {
+navLinks.classList.remove("show");
+});
+});
 </script>
 
 </body>
