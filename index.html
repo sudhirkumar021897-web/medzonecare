@@ -15,11 +15,7 @@
 --text:#1e293b;
 }
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
+*{margin:0;padding:0;box-sizing:border-box;}
 
 body{
 font-family:'Poppins',sans-serif;
@@ -28,7 +24,7 @@ line-height:1.7;
 color:var(--text);
 }
 
-/* NAVBAR */
+/* NAV */
 nav{
 background:var(--dark);
 padding:18px 8%;
@@ -40,16 +36,8 @@ top:0;
 z-index:1000;
 }
 
-.logo-area{
-display:flex;
-align-items:center;
-color:white;
-}
-
-.logo-area img{
-height:55px;
-margin-right:15px;
-}
+.logo-area{display:flex;align-items:center;color:white;}
+.logo-area img{height:55px;margin-right:15px;}
 
 .brand-text h1{
 font-family:'Playfair Display',serif;
@@ -62,15 +50,8 @@ color:var(--gold);
 font-weight:600;
 }
 
-nav ul{
-display:flex;
-list-style:none;
-}
-
-nav ul li{
-margin-left:28px;
-}
-
+nav ul{display:flex;list-style:none;}
+nav ul li{margin-left:28px;}
 nav ul li a{
 color:white;
 text-decoration:none;
@@ -83,7 +64,7 @@ letter-spacing:1px;
 .hero{
 height:90vh;
 background:linear-gradient(rgba(15,23,42,0.85),rgba(15,23,42,0.85)),
-url('https://images.unsplash.com/photo-1586773860418-d37222d8fce3?auto=format&fit=crop&w=2000&q=80');
+url('https://images.pexels.com/photos/7089020/pexels-photo-7089020.jpeg');
 background-size:cover;
 background-position:center;
 display:flex;
@@ -92,14 +73,11 @@ padding:0 8%;
 color:white;
 }
 
-.hero-content{
-max-width:750px;
-}
+.hero-content{max-width:750px;}
 
 .hero h2{
 font-family:'Playfair Display',serif;
-font-size:50px;
-color:#ffffff;
+font-size:48px;
 margin-bottom:20px;
 }
 
@@ -117,7 +95,7 @@ font-weight:600;
 border-radius:4px;
 }
 
-/* SERVICES SECTION */
+/* SERVICES */
 .section{
 padding:100px 10%;
 background:var(--light);
@@ -145,9 +123,7 @@ box-shadow:0 10px 30px rgba(0,0,0,0.08);
 transition:0.3s;
 }
 
-.service-card:hover{
-transform:translateY(-6px);
-}
+.service-card:hover{transform:translateY(-6px);}
 
 .service-card img{
 width:100%;
@@ -163,9 +139,7 @@ margin-bottom:15px;
 font-size:22px;
 }
 
-.service-card p{
-font-size:15px;
-}
+.service-card p{font-size:15px;}
 
 /* FOOTER */
 footer{
@@ -181,9 +155,7 @@ font-size:26px;
 margin-bottom:15px;
 }
 
-footer p{
-margin-bottom:8px;
-}
+footer p{margin-bottom:8px;}
 
 .copyright{
 margin-top:30px;
@@ -193,21 +165,13 @@ font-size:14px;
 
 /* RESPONSIVE */
 @media(max-width:992px){
-.services{
-grid-template-columns:repeat(2,1fr);
-}
+.services{grid-template-columns:repeat(2,1fr);}
 }
 
 @media(max-width:768px){
-.services{
-grid-template-columns:1fr;
-}
-.hero h2{
-font-size:32px;
-}
-nav ul{
-display:none;
-}
+.services{grid-template-columns:1fr;}
+.hero h2{font-size:30px;}
+nav ul{display:none;}
 }
 </style>
 </head>
@@ -231,9 +195,9 @@ display:none;
 
 <header class="hero">
 <div class="hero-content">
-<h2>Healthcare Compliance Is Not an Option. It Is a Responsibility.</h2>
-<p>Structured systems. Audit-ready frameworks. Assured approvals.  
-Your strategic partner for accreditation, empanelment, compliance and operational excellence.</p>
+<h2>Healthcare Compliance Is a Responsibility.</h2>
+<p>Accreditation. Empanelment. Legal Compliance. Operational Excellence.  
+Structured systems for future-ready hospitals.</p>
 <a href="#" class="btn">Start Your Compliance Journey</a>
 </div>
 </header>
@@ -244,39 +208,39 @@ Your strategic partner for accreditation, empanelment, compliance and operationa
 <div class="services">
 
 <div class="service-card">
-<img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=800&q=80">
+<img src="https://images.pexels.com/photos/8460094/pexels-photo-8460094.jpeg">
 <h3>Accreditation Excellence</h3>
-<p>NABH Entry Level, Full NABH, NABH for Labs, NABL for Labs and ISO Certifications with audit-ready documentation.</p>
+<p>NABH Entry Level, Full NABH, NABL, ISO Certifications with structured documentation and implementation.</p>
 </div>
 
 <div class="service-card">
-<img src="https://images.unsplash.com/photo-1580281658629-67b94bcd82d8?auto=format&fit=crop&w=800&q=80">
+<img src="https://images.pexels.com/photos/7841467/pexels-photo-7841467.jpeg">
 <h3>Strategic Empanelment Support</h3>
-<p>Insurance Empanelments, Ayushman Bharat, Himcare, State Government Panels, CGHS, ECHS and ESI approvals.</p>
+<p>Insurance empanelments, Ayushman Bharat, CGHS, ECHS, Himcare and government panel documentation & approvals.</p>
 </div>
 
 <div class="service-card">
-<img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80">
+<img src="https://images.pexels.com/photos/4427610/pexels-photo-4427610.jpeg">
 <h3>Legal and Compliance Support</h3>
-<p>Fire NOC, Pollution Control Board compliance, biomedical waste authorization, hospital registrations and regulatory licenses.</p>
+<p>Fire NOC, Pollution Control Board, Biomedical Waste authorization, registrations, licensing & statutory compliance.</p>
 </div>
 
 <div class="service-card">
-<img src="https://images.unsplash.com/photo-1551076805-e1869033e561?auto=format&fit=crop&w=800&q=80">
+<img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg">
 <h3>Hospital Planning & Infrastructure</h3>
-<p>Architectural designing, hospital layout planning and infrastructure compliance structuring.</p>
+<p>Architectural planning, compliance layouts, infrastructure audit readiness and design consultancy.</p>
 </div>
 
 <div class="service-card">
-<img src="https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?auto=format&fit=crop&w=800&q=80">
+<img src="https://images.pexels.com/photos/8376233/pexels-photo-8376233.jpeg">
 <h3>Operational & Financial Strength</h3>
-<p>TPA billing outsourcing, revenue cycle management and process optimization.</p>
+<p>TPA billing outsourcing, revenue cycle management and healthcare operational strengthening.</p>
 </div>
 
 <div class="service-card">
-<img src="https://images.unsplash.com/photo-1581093458791-9d42b6c2fda8?auto=format&fit=crop&w=800&q=80">
-<h3>Healthcare IT & Systems (HIMS)</h3>
-<p>Hospital software implementation, digital records and scalable healthcare systems.</p>
+<img src="https://images.pexels.com/photos/7089401/pexels-photo-7089401.jpeg">
+<h3>Healthcare IT & Systems</h3>
+<p>Hospital Information Management Systems (HIMS), patient record software, digital documentation and automation.</p>
 </div>
 
 </div>
