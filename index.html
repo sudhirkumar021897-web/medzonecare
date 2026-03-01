@@ -9,11 +9,6 @@
 
 <meta name="description" content="Medzone Health Care Advisors provides NABH accreditation, hospital compliance, empanelment, Fire NOC, Pollution Control and healthcare IT solutions.">
 
-<meta property="og:title" content="Medzone Health Care Advisors">
-<meta property="og:description" content="NABH Accreditation, Hospital Compliance & Healthcare Consultancy.">
-<meta property="og:type" content="website">
-<meta property="og:image" content="https://medzonecare.com/images/logo.png">
-
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 
 <style>
@@ -23,7 +18,7 @@ html{scroll-behavior:smooth;}
 :root{
 --primary:#0f172a;
 --gold:#c9a227;
---light:#f4f8fc;
+--light:#f4f8fb;
 --text:#1e293b;
 }
 
@@ -33,7 +28,6 @@ body{
 font-family:'Poppins',sans-serif;
 color:var(--text);
 line-height:1.7;
-background:white;
 }
 
 /* NAVIGATION */
@@ -48,12 +42,20 @@ top:0;
 z-index:1000;
 }
 
-.logo-area{display:flex;align-items:center;color:white;}
-.logo-area img{height:55px;margin-right:15px;}
+.logo-area{
+display:flex;
+align-items:center;
+color:white;
+}
+
+.logo-area img{
+height:55px;
+margin-right:15px;
+}
 
 .brand-text h1{
 font-family:'Playfair Display',serif;
-font-size:24px;
+font-size:22px;
 color:white;
 }
 
@@ -62,13 +64,27 @@ color:var(--gold);
 font-weight:600;
 }
 
-nav ul{display:flex;list-style:none;}
-nav ul li{margin-left:28px;}
+nav ul{
+display:flex;
+list-style:none;
+}
+
+nav ul li{
+margin-left:28px;
+}
+
 nav ul li a{
 color:white;
 text-decoration:none;
 font-size:14px;
 letter-spacing:1px;
+}
+
+.menu-toggle{
+display:none;
+font-size:28px;
+color:white;
+cursor:pointer;
 }
 
 /* HERO */
@@ -108,48 +124,105 @@ display:inline-block;
 }
 
 /* SECTION */
-.section{padding:100px 10%;text-align:center;}
-.light-bg{background:var(--light);}
+.section{
+padding:90px 10%;
+text-align:center;
+}
+
+.light-bg{
+background:var(--light);
+}
 
 .section h2{
 font-family:'Playfair Display',serif;
-font-size:40px;
-margin-bottom:50px;
+font-size:38px;
+margin-bottom:40px;
 color:var(--primary);
+}
+
+/* CTA */
+.cta{
+background:var(--primary);
+color:white;
+padding:60px 10%;
+text-align:center;
+}
+
+.cta h2{
+margin-bottom:20px;
+}
+
+/* WHY */
+.why-box{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:25px;
+margin-top:40px;
+}
+
+.why-item{
+background:white;
+padding:25px;
+border-radius:8px;
+box-shadow:0 5px 15px rgba(0,0,0,0.08);
 }
 
 /* SERVICES */
 .services{
 display:grid;
 grid-template-columns:repeat(3,1fr);
-gap:35px;
+gap:30px;
 }
 
 .service-card{
 background:white;
 border-radius:10px;
-box-shadow:0 10px 25px rgba(0,0,0,0.08);
+box-shadow:0 8px 20px rgba(0,0,0,0.08);
 overflow:hidden;
 transition:0.3s;
 }
 
-.service-card:hover{transform:translateY(-6px);}
-.service-card img{width:100%;height:220px;object-fit:cover;}
-.service-content{padding:25px;}
-.service-content h3{font-size:22px;margin-bottom:12px;color:var(--primary);}
-.service-content p{font-size:15px;}
+.service-card:hover{
+transform:translateY(-6px);
+}
 
-/* ABOUT */
-.about-content{
-max-width:900px;
+.service-card img{
+width:100%;
+height:220px;
+object-fit:cover;
+}
+
+.service-content{
+padding:20px;
+}
+
+.service-content h3{
+margin-bottom:10px;
+}
+
+/* TESTIMONIAL */
+.testimonial{
+max-width:700px;
 margin:auto;
-font-size:18px;
+font-style:italic;
+}
+
+/* FAQ */
+.faq-item{
+max-width:800px;
+margin:20px auto;
+text-align:left;
+}
+
+.faq-item h4{
+margin-bottom:8px;
+color:var(--primary);
 }
 
 /* CONTACT */
 .contact-form{
 max-width:600px;
-margin:0 auto;
+margin:auto;
 }
 
 .contact-form input,
@@ -159,7 +232,6 @@ padding:12px;
 margin-bottom:15px;
 border:1px solid #ccc;
 border-radius:5px;
-font-family:'Poppins';
 }
 
 .contact-form button{
@@ -174,7 +246,7 @@ cursor:pointer;
 footer{
 background:#0b1220;
 color:white;
-padding:50px 10%;
+padding:40px;
 text-align:center;
 }
 
@@ -188,23 +260,52 @@ z-index:1000;
 
 .whatsapp-float img{
 width:60px;
-height:60px;
-transition:0.3s;
-}
-
-.whatsapp-float img:hover{
-transform:scale(1.1);
 }
 
 /* RESPONSIVE */
 @media(max-width:992px){
 .services{grid-template-columns:repeat(2,1fr);}
+.why-box{grid-template-columns:repeat(2,1fr);}
 }
 
 @media(max-width:768px){
-.services{grid-template-columns:1fr;}
-.hero h2{font-size:30px;}
-nav ul{display:none;}
+
+nav{
+flex-direction:column;
+align-items:flex-start;
+}
+
+.menu-toggle{
+display:block;
+position:absolute;
+right:20px;
+top:25px;
+}
+
+nav ul{
+display:none;
+flex-direction:column;
+width:100%;
+background:var(--primary);
+margin-top:15px;
+}
+
+nav ul li{
+margin:15px 0;
+}
+
+nav ul.show{
+display:flex;
+}
+
+.services,
+.why-box{
+grid-template-columns:1fr;
+}
+
+.hero h2{
+font-size:30px;
+}
 }
 
 </style>
@@ -214,13 +315,16 @@ nav ul{display:none;}
 
 <nav>
 <div class="logo-area">
-<img src="images/logo.png" alt="Medzone Logo">
+<img src="images/logo.png" alt="Logo">
 <div class="brand-text">
 <h1>Medzone Health Care Advisors</h1>
 <p><strong>"One Zone For Healthcare"</strong></p>
 </div>
 </div>
-<ul>
+
+<div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+<ul id="nav-links">
 <li><a href="#">Home</a></li>
 <li><a href="#services">Services</a></li>
 <li><a href="#about">About</a></li>
@@ -236,9 +340,23 @@ nav ul{display:none;}
 </div>
 </header>
 
+<section class="cta">
+<h2>Get NABH Ready with Expert Guidance</h2>
+<a href="#contact" class="btn">Schedule Free Consultation</a>
+</section>
+
+<section class="section">
+<h2>Why Choose Medzone?</h2>
+<div class="why-box">
+<div class="why-item">✔ NABH & Entry Level Specialists</div>
+<div class="why-item">✔ End-to-End Compliance Solutions</div>
+<div class="why-item">✔ Insurance & Government Panels</div>
+<div class="why-item">✔ Healthcare IT & Operational Support</div>
+</div>
+</section>
+
 <section id="services" class="section light-bg">
 <h2>Our Comprehensive Healthcare Services</h2>
-
 <div class="services">
 
 <div class="service-card">
@@ -261,31 +379,7 @@ nav ul{display:none;}
 <img src="images/legal.jpg">
 <div class="service-content">
 <h3>Legal and Compliance Support</h3>
-<p>Fire NOC, Pollution Control Board, biomedical waste authorization and statutory healthcare registrations.</p>
-</div>
-</div>
-
-<div class="service-card">
-<img src="images/planning.jpg">
-<div class="service-content">
-<h3>Hospital Planning & Infrastructure</h3>
-<p>Architectural layout compliance, infrastructure structuring and healthcare facility consultancy.</p>
-</div>
-</div>
-
-<div class="service-card">
-<img src="images/operations.jpg">
-<div class="service-content">
-<h3>Operational & Financial Strength</h3>
-<p>TPA billing outsourcing, revenue cycle management and financial process optimization.</p>
-</div>
-</div>
-
-<div class="service-card">
-<img src="images/healthcare-it.jpg">
-<div class="service-content">
-<h3>Healthcare IT & Systems</h3>
-<p>Hospital Information Management Systems, digital patient records and automation solutions.</p>
+<p>Fire NOC, Pollution Control Board and statutory healthcare registrations.</p>
 </div>
 </div>
 
@@ -294,14 +388,22 @@ nav ul{display:none;}
 
 <section id="about" class="section">
 <h2>About Medzone</h2>
-<div class="about-content">
-<p>
-Medzone Health Care Advisors is a specialized healthcare consultancy providing structured accreditation, compliance and operational solutions for hospitals and healthcare institutions. We ensure hospitals remain audit-ready, compliant and growth-focused through systematic documentation, regulatory expertise and strategic planning.
-</p>
+<p>Medzone Health Care Advisors provides structured accreditation, compliance and operational solutions ensuring hospitals remain audit-ready, compliant and growth-focused.</p>
+</section>
+
+<section class="section light-bg">
+<h2>Frequently Asked Questions</h2>
+<div class="faq-item">
+<h4>What is NABH Entry Level Accreditation?</h4>
+<p>It is a quality certification process for hospitals ensuring basic safety and care standards.</p>
+</div>
+<div class="faq-item">
+<h4>How long does NABH process take?</h4>
+<p>Typically 3–6 months depending on preparedness and documentation.</p>
 </div>
 </section>
 
-<section id="contact" class="section light-bg">
+<section id="contact" class="section">
 <h2>Contact Us</h2>
 
 <div class="contact-form">
@@ -310,7 +412,6 @@ Medzone Health Care Advisors is a specialized healthcare consultancy providing s
 <input type="email" name="email" placeholder="Your Email" required>
 <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
 <input type="hidden" name="_captcha" value="false">
-<input type="hidden" name="_subject" value="New Website Enquiry - Medzone">
 <button type="submit">Submit</button>
 </form>
 </div>
@@ -332,9 +433,15 @@ width="100%" height="300" style="border:0;margin-top:30px;" allowfullscreen=""><
 <p>© 2026 All Rights Reserved</p>
 </footer>
 
-<a href="https://wa.me/917888926396?text=Hello%20Medzone%20Health%20Care%20Advisors,%20I%20would%20like%20to%20know%20about%20your%20services." class="whatsapp-float" target="_blank">
-<img src="images/whatsapp.png" alt="WhatsApp">
+<a href="https://wa.me/917888926396" class="whatsapp-float" target="_blank">
+<img src="images/whatsapp.png">
 </a>
+
+<script>
+function toggleMenu(){
+document.getElementById("nav-links").classList.toggle("show");
+}
+</script>
 
 </body>
 </html>
