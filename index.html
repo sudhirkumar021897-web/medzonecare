@@ -8,10 +8,7 @@
 <title>Medzone Health Care Advisors | One Zone For Healthcare</title>
 
 <meta name="description" content="Medzone Health Care Advisors provides NABH accreditation, hospital compliance, empanelment, Fire NOC, Pollution Control and healthcare IT solutions.">
-<meta name="keywords" content="NABH Consultant, Hospital Accreditation, Fire NOC, Hospital Compliance, Healthcare Consultancy India">
-<meta name="author" content="Medzone Health Care Advisors">
 
-<!-- Open Graph SEO -->
 <meta property="og:title" content="Medzone Health Care Advisors">
 <meta property="og:description" content="NABH Accreditation, Hospital Compliance & Healthcare Consultancy.">
 <meta property="og:type" content="website">
@@ -30,11 +27,7 @@ html { scroll-behavior:smooth; }
 --text:#1e293b;
 }
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
+*{margin:0;padding:0;box-sizing:border-box;}
 
 body{
 font-family:'Poppins',sans-serif;
@@ -43,7 +36,7 @@ line-height:1.7;
 background:white;
 }
 
-/* NAVIGATION */
+/* NAV */
 nav{
 background:var(--primary);
 padding:18px 8%;
@@ -55,16 +48,8 @@ top:0;
 z-index:1000;
 }
 
-.logo-area{
-display:flex;
-align-items:center;
-color:white;
-}
-
-.logo-area img{
-height:55px;
-margin-right:15px;
-}
+.logo-area{display:flex;align-items:center;color:white;}
+.logo-area img{height:55px;margin-right:15px;}
 
 .brand-text h1{
 font-family:'Playfair Display',serif;
@@ -77,15 +62,8 @@ color:var(--gold);
 font-weight:600;
 }
 
-nav ul{
-display:flex;
-list-style:none;
-}
-
-nav ul li{
-margin-left:28px;
-}
-
+nav ul{display:flex;list-style:none;}
+nav ul li{margin-left:28px;}
 nav ul li a{
 color:white;
 text-decoration:none;
@@ -106,9 +84,7 @@ padding:0 8%;
 color:white;
 }
 
-.hero-content{
-max-width:750px;
-}
+.hero-content{max-width:750px;}
 
 .hero h2{
 font-family:'Playfair Display',serif;
@@ -132,14 +108,8 @@ display:inline-block;
 }
 
 /* SECTION */
-.section{
-padding:100px 10%;
-text-align:center;
-}
-
-.light-bg{
-background:var(--light);
-}
+.section{padding:100px 10%;text-align:center;}
+.light-bg{background:var(--light);}
 
 .section h2{
 font-family:'Playfair Display',serif;
@@ -163,28 +133,17 @@ overflow:hidden;
 transition:0.3s;
 }
 
-.service-card:hover{
-transform:translateY(-6px);
-}
+.service-card:hover{transform:translateY(-6px);}
+.service-card img{width:100%;height:220px;object-fit:cover;}
+.service-content{padding:25px;}
+.service-content h3{font-size:22px;margin-bottom:12px;color:var(--primary);}
+.service-content p{font-size:15px;}
 
-.service-card img{
-width:100%;
-height:220px;
-object-fit:cover;
-}
-
-.service-content{
-padding:25px;
-}
-
-.service-content h3{
-font-size:22px;
-margin-bottom:12px;
-color:var(--primary);
-}
-
-.service-content p{
-font-size:15px;
+/* ABOUT */
+.about-content{
+max-width:900px;
+margin:auto;
+font-size:18px;
 }
 
 /* CONTACT */
@@ -200,7 +159,6 @@ padding:12px;
 margin-bottom:15px;
 border:1px solid #ccc;
 border-radius:5px;
-font-family:'Poppins';
 }
 
 .contact-form button{
@@ -239,21 +197,13 @@ transform:scale(1.1);
 
 /* RESPONSIVE */
 @media(max-width:992px){
-.services{
-grid-template-columns:repeat(2,1fr);
-}
+.services{grid-template-columns:repeat(2,1fr);}
 }
 
 @media(max-width:768px){
-.services{
-grid-template-columns:1fr;
-}
-.hero h2{
-font-size:30px;
-}
-nav ul{
-display:none;
-}
+.services{grid-template-columns:1fr;}
+.hero h2{font-size:30px;}
+nav ul{display:none;}
 }
 
 </style>
@@ -263,16 +213,16 @@ display:none;
 
 <nav>
 <div class="logo-area">
-<img src="images/logo.png" alt="Medzone Logo">
+<img src="images/logo.png" alt="Logo">
 <div class="brand-text">
 <h1>Medzone Health Care Advisors</h1>
 <p><strong>"One Zone For Healthcare"</strong></p>
 </div>
 </div>
-
 <ul>
 <li><a href="#">Home</a></li>
 <li><a href="#services">Services</a></li>
+<li><a href="#about">About</a></li>
 <li><a href="#contact">Contact</a></li>
 </ul>
 </nav>
@@ -287,11 +237,10 @@ display:none;
 
 <section id="services" class="section light-bg">
 <h2>Our Services</h2>
-
 <div class="services">
 
 <div class="service-card">
-<img src="images/accreditation.jpg" alt="Accreditation">
+<img src="images/accreditation.jpg">
 <div class="service-content">
 <h3>Accreditation Excellence</h3>
 <p>NABH Entry Level, Full NABH, NABL and ISO certifications with structured documentation and audit readiness.</p>
@@ -299,49 +248,34 @@ display:none;
 </div>
 
 <div class="service-card">
-<img src="images/empanelment.jpg" alt="Empanelment">
+<img src="images/empanelment.jpg">
 <div class="service-content">
 <h3>Strategic Empanelment Support</h3>
-<p>Insurance, CGHS, ECHS, Ayushman Bharat and government panel documentation & approvals.</p>
+<p>Insurance, CGHS, ECHS, Ayushman Bharat and government panel approvals.</p>
 </div>
 </div>
 
 <div class="service-card">
-<img src="images/legal.jpg" alt="Legal Compliance">
+<img src="images/legal.jpg">
 <div class="service-content">
 <h3>Legal and Compliance Support</h3>
-<p>Fire NOC, Pollution Control Board, biomedical waste authorization and statutory registrations.</p>
-</div>
-</div>
-
-<div class="service-card">
-<img src="images/planning.jpg" alt="Hospital Planning">
-<div class="service-content">
-<h3>Hospital Planning & Infrastructure</h3>
-<p>Architectural compliance layout planning and healthcare infrastructure consultancy.</p>
-</div>
-</div>
-
-<div class="service-card">
-<img src="images/operations.jpg" alt="Operations">
-<div class="service-content">
-<h3>Operational & Financial Strength</h3>
-<p>TPA billing outsourcing and revenue cycle management solutions.</p>
-</div>
-</div>
-
-<div class="service-card">
-<img src="images/healthcare-it.jpg" alt="Healthcare IT">
-<div class="service-content">
-<h3>Healthcare IT & Systems</h3>
-<p>HIMS implementation, digital patient record systems and automation.</p>
+<p>Fire NOC, Pollution Control Board and statutory healthcare registrations.</p>
 </div>
 </div>
 
 </div>
 </section>
 
-<section id="contact" class="section">
+<section id="about" class="section">
+<h2>About Medzone</h2>
+<div class="about-content">
+<p>
+Medzone Health Care Advisors is a specialized healthcare consultancy providing structured accreditation, compliance and operational solutions for hospitals and healthcare institutions. We help organizations become audit-ready, compliant and growth-focused through systematic documentation and expert regulatory guidance.
+</p>
+</div>
+</section>
+
+<section id="contact" class="section light-bg">
 <h2>Contact Us</h2>
 
 <div class="contact-form">
@@ -349,10 +283,8 @@ display:none;
 <input type="text" name="name" placeholder="Your Name" required>
 <input type="email" name="email" placeholder="Your Email" required>
 <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-
 <input type="hidden" name="_captcha" value="false">
 <input type="hidden" name="_subject" value="New Website Enquiry - Medzone">
-
 <button type="submit">Submit</button>
 </form>
 </div>
@@ -362,6 +294,15 @@ display:none;
 📍 Zirakpur | Punjab<br>
 ✉ medzonehealthcareadvisors@gmail.com
 </p>
+
+<!-- GOOGLE MAP EMBED -->
+<iframe 
+src="https://www.google.com/maps?q=Zirakpur,Punjab&output=embed"
+width="100%" 
+height="300" 
+style="border:0;margin-top:30px;" 
+allowfullscreen="">
+</iframe>
 
 </section>
 
