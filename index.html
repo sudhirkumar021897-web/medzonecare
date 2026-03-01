@@ -7,7 +7,7 @@
 
 <title>Medzone Health Care Advisors | One Zone For Healthcare</title>
 
-<meta name="description" content="Medzone Health Care Advisors provides NABH accreditation, empanelment, Fire NOC, Pollution Control, Legal Compliance and Healthcare IT solutions.">
+<meta name="description" content="Medzone Health Care Advisors provides NABH accreditation, hospital compliance, empanelment, Fire NOC, Pollution Control and healthcare IT solutions.">
 
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 
@@ -30,7 +30,7 @@ color:var(--text);
 line-height:1.7;
 }
 
-/* NAVBAR */
+/* NAVIGATION */
 nav{
 background:var(--primary);
 padding:18px 8%;
@@ -49,20 +49,19 @@ color:white;
 }
 
 .logo-area img{
-height:50px;
-margin-right:12px;
+height:55px;
+margin-right:15px;
 }
 
 .brand-text h1{
 font-family:'Playfair Display',serif;
-font-size:20px;
+font-size:22px;
 color:white;
 }
 
 .brand-text p{
 color:var(--gold);
 font-weight:600;
-font-size:13px;
 }
 
 nav ul{
@@ -71,7 +70,7 @@ list-style:none;
 }
 
 nav ul li{
-margin-left:25px;
+margin-left:28px;
 }
 
 nav ul li a{
@@ -79,16 +78,11 @@ color:white;
 text-decoration:none;
 font-size:14px;
 letter-spacing:1px;
-transition:0.3s;
-}
-
-nav ul li a:hover{
-color:var(--gold);
 }
 
 .menu-toggle{
 display:none;
-font-size:26px;
+font-size:28px;
 color:white;
 cursor:pointer;
 }
@@ -110,7 +104,7 @@ color:white;
 
 .hero h2{
 font-family:'Playfair Display',serif;
-font-size:46px;
+font-size:48px;
 margin-bottom:20px;
 }
 
@@ -141,7 +135,7 @@ background:var(--light);
 
 .section h2{
 font-family:'Playfair Display',serif;
-font-size:36px;
+font-size:38px;
 margin-bottom:40px;
 color:var(--primary);
 }
@@ -259,27 +253,25 @@ width:60px;
 
 .menu-toggle{
 display:block;
+position:absolute;
+right:20px;
+top:25px;
 }
 
 nav ul{
-position:absolute;
-top:80px;
-left:0;
+display:none;
+flex-direction:column;
 width:100%;
 background:var(--primary);
-flex-direction:column;
-align-items:center;
-max-height:0;
-overflow:hidden;
-transition:max-height 0.4s ease;
-}
-
-nav ul.show{
-max-height:400px;
+margin-top:15px;
 }
 
 nav ul li{
-margin:18px 0;
+margin:15px 0;
+}
+
+nav ul.show{
+display:flex;
 }
 
 .services,
@@ -336,14 +328,13 @@ font-size:30px;
 
 <section id="services" class="section light-bg">
 <h2>Our Comprehensive Healthcare Services</h2>
-
 <div class="services">
 
 <div class="service-card">
 <img src="images/accreditation.jpg">
 <div class="service-content">
 <h3>Accreditation Excellence</h3>
-<p>NABH Entry Level, Full NABH, NABL and ISO certifications.</p>
+<p>NABH Entry Level, Full NABH, NABL and ISO certifications with structured documentation and audit readiness.</p>
 </div>
 </div>
 
@@ -351,7 +342,7 @@ font-size:30px;
 <img src="images/empanelment.jpg">
 <div class="service-content">
 <h3>Strategic Empanelment Support</h3>
-<p>Insurance & government panel approvals.</p>
+<p>Insurance, CGHS, ECHS, Ayushman Bharat and government panel documentation & approvals.</p>
 </div>
 </div>
 
@@ -359,31 +350,7 @@ font-size:30px;
 <img src="images/legal.jpg">
 <div class="service-content">
 <h3>Legal and Compliance Support</h3>
-<p>Healthcare licenses and statutory documentation.</p>
-</div>
-</div>
-
-<div class="service-card">
-<img src="images/fire.jpg">
-<div class="service-content">
-<h3>Fire & Safety Compliance</h3>
-<p>Fire NOC and safety audits.</p>
-</div>
-</div>
-
-<div class="service-card">
-<img src="images/pollution.jpg">
-<div class="service-content">
-<h3>Pollution Control & Biomedical Waste</h3>
-<p>PCB approvals and biomedical compliance.</p>
-</div>
-</div>
-
-<div class="service-card">
-<img src="images/healthcareit.jpg">
-<div class="service-content">
-<h3>Healthcare IT & Systems</h3>
-<p>Hospital software and digital compliance systems.</p>
+<p>Fire NOC, Pollution Control Board and statutory healthcare registrations.</p>
 </div>
 </div>
 
@@ -392,10 +359,25 @@ font-size:30px;
 
 <section id="about" class="section">
 <h2>About Medzone</h2>
-<p>We provide structured healthcare accreditation, compliance and operational solutions ensuring hospitals remain audit-ready and growth-focused.</p>
+<p>Medzone Health Care Advisors provides structured accreditation, compliance and operational solutions ensuring hospitals remain audit-ready, compliant and growth-focused.</p>
 </section>
 
-<section id="contact" class="section light-bg">
+<section class="section light-bg">
+<h2>Frequently Asked Questions</h2>
+
+<div class="faq-item">
+<h4>What is NABH Entry Level Accreditation?</h4>
+<p>It is a quality certification process for hospitals ensuring basic safety and care standards.</p>
+</div>
+
+<div class="faq-item">
+<h4>How long does NABH process take?</h4>
+<p>Typically 3–6 months depending on preparedness and documentation.</p>
+</div>
+
+</section>
+
+<section id="contact" class="section">
 <h2>Contact Us</h2>
 
 <div class="contact-form">
@@ -430,17 +412,9 @@ width="100%" height="300" style="border:0;margin-top:30px;" allowfullscreen=""><
 </a>
 
 <script>
-const navLinks = document.getElementById("nav-links");
-
 function toggleMenu(){
-navLinks.classList.toggle("show");
+document.getElementById("nav-links").classList.toggle("show");
 }
-
-document.querySelectorAll("#nav-links a").forEach(link => {
-link.addEventListener("click", () => {
-navLinks.classList.remove("show");
-});
-});
 </script>
 
 </body>
