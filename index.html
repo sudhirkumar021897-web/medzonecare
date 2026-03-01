@@ -4,211 +4,151 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Medzone Healthcare Advisors</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-
 <style>
-:root{
---primary:#e10600;
---dark:#111;
---gray:#666;
---light:#f8f9fc;
-}
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Poppins',sans-serif;
-}
-
-body{
-background:#fff;
-color:var(--dark);
-}
-
-.container{
-width:90%;
-max-width:1200px;
-margin:auto;
-}
-
-/* NAVBAR */
-nav{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:25px 0;
-}
-
-.logo{
-font-weight:800;
-font-size:22px;
-color:var(--primary);
-}
-
-nav ul{
-display:flex;
-list-style:none;
-gap:35px;
-}
-
-nav a{
-text-decoration:none;
-color:var(--dark);
-font-weight:500;
-transition:.3s;
-}
-
-nav a:hover{
-color:var(--primary);
-}
-
-/* HERO */
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,Helvetica,sans-serif;}
+body{background:#f5f5f5;color:#222;line-height:1.6}
+.container{width:90%;max-width:1100px;margin:auto}
+header{background:#111;color:#fff;padding:15px 0}
+nav{display:flex;justify-content:space-between;align-items:center}
+nav a{color:#fff;text-decoration:none;margin-left:20px;font-size:14px}
 .hero{
-padding:80px 0 120px;
+background:url('images/hero.jpg') center/cover no-repeat;
+height:90vh;
 display:flex;
 align-items:center;
-justify-content:space-between;
-gap:50px;
-flex-wrap:wrap;
-}
-
-.hero-left{
-flex:1;
-min-width:300px;
-}
-
-.hero-left h1{
-font-size:52px;
-line-height:1.2;
-font-weight:800;
-margin-bottom:25px;
-}
-
-.hero-left p{
-color:var(--gray);
-font-size:18px;
-margin-bottom:35px;
-max-width:500px;
-}
-
-.btn{
-display:inline-block;
-padding:14px 30px;
-border-radius:6px;
-text-decoration:none;
-font-weight:600;
-margin-right:15px;
-transition:.3s;
-}
-
-.btn-primary{
-background:var(--primary);
 color:#fff;
-}
-
-.btn-primary:hover{
-background:#b30000;
-}
-
-.btn-outline{
-border:2px solid var(--primary);
-color:var(--primary);
-}
-
-.btn-outline:hover{
-background:var(--primary);
-color:#fff;
-}
-
-.hero-right{
-flex:1;
-min-width:300px;
 position:relative;
 }
-
-.hero-right img{
-width:100%;
-border-radius:12px;
-box-shadow:0 20px 50px rgba(0,0,0,.15);
+.hero::after{
+content:'';
+position:absolute;
+top:0;left:0;
+width:100%;height:100%;
+background:rgba(0,0,0,0.6);
 }
-
-/* SERVICES SECTION */
-.section{
-padding:100px 0;
-background:var(--light);
+.hero-content{
+position:relative;
+z-index:2;
+max-width:600px;
 }
-
-.section h2{
-text-align:center;
-font-size:38px;
-margin-bottom:60px;
+.hero h1{font-size:42px;margin-bottom:15px}
+.hero p{margin-bottom:20px}
+.btn{
+background:#5bbf21;
+color:#fff;
+padding:12px 25px;
+text-decoration:none;
+display:inline-block;
+border-radius:4px;
+font-weight:bold;
 }
-
-.services{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:40px;
-}
-
-.service-card{
+.section{padding:60px 0}
+.cards{display:flex;gap:20px;flex-wrap:wrap}
+.card{
 background:#fff;
-padding:40px 30px;
-border-radius:12px;
-box-shadow:0 10px 30px rgba(0,0,0,.08);
-transition:.3s;
-}
-
-.service-card:hover{
-transform:translateY(-8px);
-box-shadow:0 20px 40px rgba(0,0,0,.15);
-}
-
-.service-card img{
-width:70px;
-margin-bottom:20px;
-}
-
-.service-card h3{
-margin-bottom:15px;
-font-size:20px;
-}
-
-.service-card p{
-color:var(--gray);
-font-size:15px;
-}
-
-/* ABOUT */
-.about{
-padding:100px 0;
-display:flex;
-align-items:center;
-justify-content:space-between;
-gap:50px;
-flex-wrap:wrap;
-}
-
-.about img{
+padding:25px;
+border-radius:6px;
 flex:1;
-min-width:300px;
-border-radius:12px;
-box-shadow:0 20px 40px rgba(0,0,0,.1);
+min-width:250px;
+box-shadow:0 5px 15px rgba(0,0,0,0.05);
 }
-
-.about-text{
-flex:1;
-min-width:300px;
+.about{display:flex;gap:30px;flex-wrap:wrap;align-items:center}
+.about img{width:100%;max-width:400px;border-radius:6px}
+.stats{background:#fff;padding:40px 0;text-align:center}
+.stats h2{font-size:32px;color:#5bbf21}
+.cta{
+background:#5bbf21;
+color:#fff;
+text-align:center;
+padding:50px 20px;
+border-radius:8px;
 }
-
-.about-text h2{
-font-size:36px;
-margin-bottom:20px;
+footer{
+background:#111;
+color:#ccc;
+padding:40px 0;
+text-align:center;
+font-size:14px;
 }
+@media(max-width:768px){
+.hero h1{font-size:30px}
+.about{flex-direction:column}
+}
+</style>
+</head>
+<body>
 
-.about-text p{
-color:var(--gray);
-margin-bottom
+<header>
+<div class="container">
+<nav>
+<h2>Medzone</h2>
+<div>
+<a href="#">Home</a>
+<a href="#">About</a>
+<a href="#">Services</a>
+<a href="#">Contact</a>
+</div>
+</nav>
+</div>
+</header>
+
+<section class="hero">
+<div class="container hero-content">
+<h1>Empowering Healthcare Compliance Solutions</h1>
+<p>Expert NABH Accreditation & Hospital Compliance Consultancy</p>
+<a href="#" class="btn">Get Started</a>
+</div>
+</section>
+
+<section class="section">
+<div class="container cards">
+<div class="card">
+<h3>Consulting</h3>
+<p>End-to-end NABH implementation for hospitals and dental clinics.</p>
+</div>
+<div class="card">
+<h3>Medical Science</h3>
+<p>Clinical quality systems & documentation development.</p>
+</div>
+<div class="card">
+<h3>Documentation Support</h3>
+<p>Complete SOP preparation and compliance documentation.</p>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container about">
+<div>
+<h2>About Medzone Healthcare Advisors</h2>
+<p>We help hospitals achieve NABH accreditation through structured compliance systems, legal documentation, staff training, and mock assessments.</p>
+</div>
+<img src="images/about.jpg" alt="About">
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="cta">
+<h2>Take Action Today</h2>
+<p>Planning NABH Accreditation? Let's build an assessment-ready hospital.</p>
+<a href="#" class="btn">Contact Now</a>
+</div>
+</div>
+</section>
+
+<section class="stats">
+<div class="container">
+<h2>142,790+</h2>
+<p>Patients Impacted Through Quality Systems</p>
+</div>
+</section>
+
+<footer>
+<div class="container">
+<p>© 2026 Medzone Healthcare Advisors | Zirakpur | 7888926396</p>
+</div>
+</footer>
+
 </body>
 </html>
