@@ -8,8 +8,8 @@
 <style>
 :root{
 --primary-red:#cc0000;
---black:#000;
---white:#fff;
+--black:#000000;
+--white:#ffffff;
 --grey:#555;
 }
 
@@ -24,10 +24,10 @@ body{
 background:#f9f9f9;
 color:var(--grey);
 line-height:1.8;
-font-size:18px;   /* Increased base font */
+font-size:19px;
 }
 
-/* NAVIGATION */
+/* NAVBAR */
 nav{
 background:var(--black);
 padding:15px 6%;
@@ -42,25 +42,29 @@ z-index:1000;
 .logo-area{
 display:flex;
 align-items:center;
-color:var(--white);
 }
 
 .logo-area img{
-height:45px;
-margin-right:10px;
+height:50px;
+margin-right:12px;
 }
 
-.logo-text{
+.brand-text{
 color:var(--white);
+text-align:left;
 }
 
-.logo-text h1{
-font-size:20px;
+.brand-text h1{
+font-size:22px;
+font-weight:700;
 }
 
-.logo-text span{
+.brand-text p{
+font-size:15px;
+font-weight:bold;
+text-align:center;
 color:var(--primary-red);
-font-size:14px;
+margin-top:4px;
 }
 
 nav ul{
@@ -69,14 +73,15 @@ display:flex;
 }
 
 nav ul li{
-margin-left:20px;
+margin-left:25px;
 }
 
 nav ul li a{
 color:var(--white);
 text-decoration:none;
-font-size:15px;
-font-weight:500;
+font-size:14px;
+letter-spacing:1px;
+text-transform:uppercase;
 }
 
 nav ul li a:hover{
@@ -86,7 +91,7 @@ color:var(--primary-red);
 /* HERO */
 .hero{
 background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
-url('https://images.unsplash.com/photo-1588776814546-ec7e1eeb4f79?auto=format&fit=crop&w=2000&q=80');
+url('https://images.unsplash.com/photo-1580281657527-47a58b655d5d?auto=format&fit=crop&w=2000&q=80');
 background-size:cover;
 background-position:center;
 height:90vh;
@@ -101,9 +106,9 @@ max-width:700px;
 }
 
 .hero h2{
-font-size:44px;   /* Bigger heading */
+font-size:46px;
 margin-bottom:20px;
-line-height:1.3;
+line-height:1.2;
 }
 
 .hero p{
@@ -114,21 +119,26 @@ margin-bottom:30px;
 .btn{
 background:var(--primary-red);
 color:var(--white);
-padding:14px 30px;
+padding:15px 32px;
 text-decoration:none;
 border-radius:5px;
 font-weight:bold;
 font-size:16px;
+transition:0.3s;
+}
+
+.btn:hover{
+background:#a80000;
 }
 
 /* SECTION */
 .section{
-padding:80px 10%;
+padding:90px 10%;
 text-align:center;
 }
 
 .section h2{
-font-size:32px;
+font-size:34px;
 margin-bottom:25px;
 color:var(--black);
 }
@@ -137,8 +147,8 @@ color:var(--black);
 .services{
 display:grid;
 grid-template-columns:repeat(3,1fr);
-gap:30px;
-margin-top:40px;
+gap:35px;
+margin-top:50px;
 }
 
 .service-card{
@@ -150,12 +160,12 @@ transition:0.3s;
 }
 
 .service-card:hover{
-transform:translateY(-5px);
+transform:translateY(-6px);
 }
 
 .service-card img{
 width:100%;
-height:200px;
+height:220px;
 object-fit:cover;
 border-radius:6px;
 margin-bottom:20px;
@@ -171,17 +181,18 @@ margin-bottom:15px;
 footer{
 background:var(--black);
 color:var(--white);
-padding:60px 10% 20px 10%;
+padding:60px 10% 25px 10%;
 text-align:center;
 }
 
 footer h3{
+font-size:20px;
 margin-bottom:10px;
 }
 
 footer p{
 font-size:16px;
-opacity:0.8;
+opacity:0.85;
 }
 
 .copyright{
@@ -222,9 +233,9 @@ grid-template-columns:1fr;
 <nav>
 <div class="logo-area">
 <img src="images/logo.png" alt="Medzone Logo">
-<div class="logo-text">
+<div class="brand-text">
 <h1>Medzone Health Care Advisors</h1>
-<span>One Zone For Healthcare</span>
+<p>"One Zone For Healthcare"</p>
 </div>
 </div>
 
@@ -238,37 +249,33 @@ grid-template-columns:1fr;
 
 <header class="hero">
 <div class="hero-content">
-<h2>Empowering Healthcare Compliance Solutions</h2>
-<p>We provide expert guidance for NABH Accreditation, Hospital Compliance & Quality Implementation.</p>
-<p>हम अस्पतालों और क्लीनिकों को NABH मानकों के अनुसार उत्कृष्ट गुणवत्ता प्रणाली स्थापित करने में मार्गदर्शन प्रदान करते हैं।</p>
-<a href="#" class="btn">Get Started</a>
+<h2>Empowering Healthcare Compliance & Accreditation Excellence</h2>
+<p>Professional NABH consultancy for hospitals, clinics, and dental centres. We design structured compliance systems that ensure sustainable healthcare quality standards.</p>
+<a href="#" class="btn">Start Your Accreditation Journey</a>
 </div>
 </header>
 
 <section class="section">
-<h2>Our Core Services | हमारी सेवाएं</h2>
+<h2>Our Core Consultancy Services</h2>
 
 <div class="services">
 
 <div class="service-card">
-<img src="https://images.unsplash.com/photo-1588776814546-ec7e1eeb4f79?auto=format&fit=crop&w=800&q=80">
+<img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=800&q=80">
 <h3>NABH Entry Level Accreditation</h3>
-<p>Structured documentation & implementation support.</p>
-<p>प्रारंभिक NABH मान्यता हेतु सम्पूर्ण मार्गदर्शन।</p>
+<p>End-to-end documentation, training, gap analysis, and implementation support for first-time accreditation hospitals.</p>
 </div>
 
 <div class="service-card">
-<img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=800&q=80">
+<img src="https://images.unsplash.com/photo-1580281657527-47a58b655d5d?auto=format&fit=crop&w=800&q=80">
 <h3>Full NABH Accreditation</h3>
-<p>Complete compliance system development & mock audits.</p>
-<p>पूर्ण NABH मान्यता के लिए संपूर्ण गुणवत्ता प्रणाली विकास।</p>
+<p>Comprehensive quality system development, SOP creation, mock audits, and assessment preparation for advanced accreditation.</p>
 </div>
 
 <div class="service-card">
 <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80">
 <h3>Dental NABH Consultancy</h3>
-<p>Specialized accreditation services for dental clinics.</p>
-<p>डेंटल क्लीनिक के लिए विशेष NABH परामर्श सेवाएं।</p>
+<p>Specialized accreditation framework design and compliance systems tailored for dental clinics and day-care centres.</p>
 </div>
 
 </div>
@@ -276,7 +283,7 @@ grid-template-columns:1fr;
 
 <footer>
 <h3>Medzone Health Care Advisors</h3>
-<p>One Zone For Healthcare</p>
+<p><strong>"One Zone For Healthcare"</strong></p>
 <p>📍 Zirakpur | 📞 7888926396 | ✉ medzonehealthcare@gmail.com</p>
 
 <div class="copyright">
