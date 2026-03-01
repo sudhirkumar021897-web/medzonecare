@@ -5,28 +5,33 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Medzone Health Care Advisors | One Zone For Healthcare</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 
 <style>
+
 :root{
+--primary:#0f172a;
 --gold:#c9a227;
---dark:#0f172a;
---light:#f4f7fb;
+--light:#f5f8fc;
 --text:#1e293b;
 }
 
-*{margin:0;padding:0;box-sizing:border-box;}
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
 
 body{
 font-family:'Poppins',sans-serif;
-background:white;
-line-height:1.7;
 color:var(--text);
+background:#ffffff;
+line-height:1.7;
 }
 
-/* NAV */
+/* NAVBAR */
 nav{
-background:var(--dark);
+background:var(--primary);
 padding:18px 8%;
 display:flex;
 justify-content:space-between;
@@ -36,8 +41,16 @@ top:0;
 z-index:1000;
 }
 
-.logo-area{display:flex;align-items:center;color:white;}
-.logo-area img{height:55px;margin-right:15px;}
+.logo-area{
+display:flex;
+align-items:center;
+color:white;
+}
+
+.logo-area img{
+height:55px;
+margin-right:15px;
+}
 
 .brand-text h1{
 font-family:'Playfair Display',serif;
@@ -48,10 +61,18 @@ color:white;
 .brand-text p{
 color:var(--gold);
 font-weight:600;
+text-align:center;
 }
 
-nav ul{display:flex;list-style:none;}
-nav ul li{margin-left:28px;}
+nav ul{
+display:flex;
+list-style:none;
+}
+
+nav ul li{
+margin-left:30px;
+}
+
 nav ul li a{
 color:white;
 text-decoration:none;
@@ -64,7 +85,7 @@ letter-spacing:1px;
 .hero{
 height:90vh;
 background:linear-gradient(rgba(15,23,42,0.85),rgba(15,23,42,0.85)),
-url('https://images.pexels.com/photos/7089020/pexels-photo-7089020.jpeg');
+url('images/hero.jpg');
 background-size:cover;
 background-position:center;
 display:flex;
@@ -73,7 +94,9 @@ padding:0 8%;
 color:white;
 }
 
-.hero-content{max-width:750px;}
+.hero-content{
+max-width:700px;
+}
 
 .hero h2{
 font-family:'Playfair Display',serif;
@@ -88,8 +111,8 @@ margin-bottom:30px;
 
 .btn{
 background:var(--gold);
-color:#000;
-padding:15px 35px;
+color:black;
+padding:14px 35px;
 text-decoration:none;
 font-weight:600;
 border-radius:4px;
@@ -106,7 +129,7 @@ text-align:center;
 font-family:'Playfair Display',serif;
 font-size:40px;
 margin-bottom:60px;
-color:var(--dark);
+color:var(--primary);
 }
 
 .services{
@@ -117,33 +140,39 @@ gap:35px;
 
 .service-card{
 background:white;
-padding:25px;
 border-radius:10px;
-box-shadow:0 10px 30px rgba(0,0,0,0.08);
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+overflow:hidden;
 transition:0.3s;
 }
 
-.service-card:hover{transform:translateY(-6px);}
+.service-card:hover{
+transform:translateY(-6px);
+}
 
 .service-card img{
 width:100%;
 height:220px;
 object-fit:cover;
-border-radius:8px;
-margin-bottom:20px;
 }
 
-.service-card h3{
-color:var(--dark);
-margin-bottom:15px;
+.service-content{
+padding:25px;
+}
+
+.service-content h3{
 font-size:22px;
+margin-bottom:15px;
+color:var(--primary);
 }
 
-.service-card p{font-size:15px;}
+.service-content p{
+font-size:15px;
+}
 
 /* FOOTER */
 footer{
-background:var(--dark);
+background:var(--primary);
 color:white;
 padding:70px 10% 30px;
 text-align:center;
@@ -152,27 +181,38 @@ text-align:center;
 footer h3{
 font-family:'Playfair Display',serif;
 font-size:26px;
-margin-bottom:15px;
+margin-bottom:10px;
 }
 
-footer p{margin-bottom:8px;}
+footer p{
+margin-bottom:8px;
+}
 
 .copyright{
-margin-top:30px;
+margin-top:25px;
 opacity:0.6;
 font-size:14px;
 }
 
 /* RESPONSIVE */
 @media(max-width:992px){
-.services{grid-template-columns:repeat(2,1fr);}
+.services{
+grid-template-columns:repeat(2,1fr);
+}
 }
 
 @media(max-width:768px){
-.services{grid-template-columns:1fr;}
-.hero h2{font-size:30px;}
-nav ul{display:none;}
+.services{
+grid-template-columns:1fr;
 }
+.hero h2{
+font-size:30px;
+}
+nav ul{
+display:none;
+}
+}
+
 </style>
 </head>
 
@@ -186,6 +226,7 @@ nav ul{display:none;}
 <p><strong>"One Zone For Healthcare"</strong></p>
 </div>
 </div>
+
 <ul>
 <li><a href="#">Home</a></li>
 <li><a href="#">Services</a></li>
@@ -195,10 +236,9 @@ nav ul{display:none;}
 
 <header class="hero">
 <div class="hero-content">
-<h2>Healthcare Compliance Is a Responsibility.</h2>
-<p>Accreditation. Empanelment. Legal Compliance. Operational Excellence.  
-Structured systems for future-ready hospitals.</p>
-<a href="#" class="btn">Start Your Compliance Journey</a>
+<h2>Structured Healthcare Compliance & Growth Solutions</h2>
+<p>Accreditation, empanelment, regulatory compliance and operational strengthening for hospitals and healthcare institutions.</p>
+<a href="#" class="btn">Get Started</a>
 </div>
 </header>
 
@@ -208,39 +248,51 @@ Structured systems for future-ready hospitals.</p>
 <div class="services">
 
 <div class="service-card">
-<img src="https://images.pexels.com/photos/8460094/pexels-photo-8460094.jpeg">
+<img src="images/accreditation.jpg" alt="Accreditation Services">
+<div class="service-content">
 <h3>Accreditation Excellence</h3>
-<p>NABH Entry Level, Full NABH, NABL, ISO Certifications with structured documentation and implementation.</p>
+<p>NABH Entry Level, Full NABH, NABL and ISO certifications with structured documentation and audit readiness.</p>
+</div>
 </div>
 
 <div class="service-card">
-<img src="https://images.pexels.com/photos/7841467/pexels-photo-7841467.jpeg">
+<img src="images/empanelment.jpg" alt="Empanelment Documentation">
+<div class="service-content">
 <h3>Strategic Empanelment Support</h3>
-<p>Insurance empanelments, Ayushman Bharat, CGHS, ECHS, Himcare and government panel documentation & approvals.</p>
+<p>Insurance, Ayushman Bharat, CGHS, ECHS and government panel documentation & approvals.</p>
+</div>
 </div>
 
 <div class="service-card">
-<img src="https://images.pexels.com/photos/4427610/pexels-photo-4427610.jpeg">
+<img src="images/legal.jpg" alt="Legal Compliance Documents">
+<div class="service-content">
 <h3>Legal and Compliance Support</h3>
-<p>Fire NOC, Pollution Control Board, Biomedical Waste authorization, registrations, licensing & statutory compliance.</p>
+<p>Fire NOC, Pollution Control Board, biomedical waste authorization and statutory registrations.</p>
+</div>
 </div>
 
 <div class="service-card">
-<img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg">
+<img src="images/planning.jpg" alt="Hospital Planning">
+<div class="service-content">
 <h3>Hospital Planning & Infrastructure</h3>
-<p>Architectural planning, compliance layouts, infrastructure audit readiness and design consultancy.</p>
+<p>Architectural planning, layout compliance structuring and infrastructure consultancy.</p>
+</div>
 </div>
 
 <div class="service-card">
-<img src="https://images.pexels.com/photos/8376233/pexels-photo-8376233.jpeg">
+<img src="images/operations.jpg" alt="Hospital Operations">
+<div class="service-content">
 <h3>Operational & Financial Strength</h3>
-<p>TPA billing outsourcing, revenue cycle management and healthcare operational strengthening.</p>
+<p>TPA billing outsourcing, revenue cycle management and healthcare process optimization.</p>
+</div>
 </div>
 
 <div class="service-card">
-<img src="https://images.pexels.com/photos/7089401/pexels-photo-7089401.jpeg">
+<img src="images/healthcare-it.jpg" alt="Healthcare IT Systems">
+<div class="service-content">
 <h3>Healthcare IT & Systems</h3>
-<p>Hospital Information Management Systems (HIMS), patient record software, digital documentation and automation.</p>
+<p>Hospital Information Management Systems, digital patient records and automation solutions.</p>
+</div>
 </div>
 
 </div>
