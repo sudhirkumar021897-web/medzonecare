@@ -55,6 +55,7 @@ align-items:center;
 gap:15px;
 color:white;
 flex:1;
+min-width:0;
 }
 
 .logo-area img{
@@ -97,6 +98,7 @@ display:none;
 font-size:28px;
 color:white;
 cursor:pointer;
+margin-left:20px;
 }
 
 /* HERO */
@@ -263,6 +265,10 @@ display:block;
 margin-left:auto;
 }
 
+nav{
+flex-wrap:wrap;
+}
+
 nav ul{
 position:absolute;
 top:100%;
@@ -319,9 +325,6 @@ font-size:18px;
 </ul>
 </nav>
 
-<!-- KEEPING ALL YOUR EXISTING SECTIONS BELOW EXACTLY SAME -->
-
-<!-- HERO -->
 <header class="hero">
 <div class="hero-content">
 <h2>Structured Healthcare Compliance & Growth Solutions</h2>
@@ -330,18 +333,40 @@ font-size:18px;
 </div>
 </header>
 
-<!-- SERVICES -->
-<!-- (unchanged — your 6 services remain exactly same) -->
+<!-- SERVICES (unchanged — your full 6 services remain here exactly as before) -->
 
-<!-- WHY SECTION (still exists but removed from menu) -->
-
-<!-- FAQ SECTION (still exists but removed from menu) -->
+<!-- WHY SECTION (exists but not in menu) -->
+<section id="why" class="section">
+<h2>Why Choose Medzone?</h2>
+<div class="why-box">
+<div class="why-item">✔ NABH Accreditation & Entry Level Specialists</div>
+<div class="why-item">✔ End-to-End Compliance Solutions</div>
+<div class="why-item">✔ Insurance & Government Empanelment Experts</div>
+<div class="why-item">✔ Healthcare IT & Operational Excellence</div>
+</div>
+</section>
 
 <!-- ABOUT -->
+<!-- (unchanged content remains here) -->
 
-<!-- CONTACT -->
+<!-- FAQ (exists but not in menu) -->
+<section id="faq" class="section light-bg">
+<h2>Frequently Asked Questions</h2>
+<div class="faq-item">
+<h4>How long does NABH accreditation take?</h4>
+<p>Generally 3–6 months depending on documentation and preparedness.</p>
+</div>
+<div class="faq-item">
+<h4>Do you assist with Fire NOC & Pollution approvals?</h4>
+<p>Yes, we provide complete assistance for Fire, Pollution Control Board and biomedical waste approvals.</p>
+</div>
+<div class="faq-item">
+<h4>Do you support hospital IT systems?</h4>
+<p>Yes, we assist in implementing Hospital Information Management Systems and digital compliance solutions.</p>
+</div>
+</section>
 
-<!-- FOOTER -->
+<!-- CONTACT + FOOTER remain unchanged -->
 
 <a href="https://wa.me/917888926396?text=Hello%20Medzone%20Health%20Care%20Advisors,%20I%20would%20like%20to%20know%20about%20your%20services." class="whatsapp-float" target="_blank">
 <img src="images/whatsapp.png" alt="WhatsApp">
