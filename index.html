@@ -7,205 +7,242 @@
 
 <style>
 *{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  font-family: 'Segoe UI', Arial, sans-serif;
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI', sans-serif;
 }
 
 body{
-  background:#f4f6f8;
-  color:#222;
-  line-height:1.6;
+background:#f4f6f8;
+color:#1f2937;
+line-height:1.6;
 }
 
 .container{
-  width:90%;
-  max-width:1200px;
-  margin:auto;
+width:92%;
+max-width:1100px;
+margin:auto;
 }
 
 /* HEADER */
 header{
-  background:#0f172a;
-  padding:18px 0;
-  position:sticky;
-  top:0;
-  z-index:1000;
+position:absolute;
+width:100%;
+top:0;
+left:0;
+z-index:1000;
+padding:20px 0;
 }
 
 nav{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
+display:flex;
+justify-content:space-between;
+align-items:center;
+color:#fff;
 }
 
 nav h2{
-  color:#fff;
-  font-size:22px;
-  font-weight:700;
+font-size:20px;
+font-weight:600;
 }
 
-nav a{
-  color:#fff;
-  text-decoration:none;
-  margin-left:25px;
-  font-size:15px;
-}
-
-nav a:hover{
-  color:#6ac22f;
+.menu{
+font-size:24px;
 }
 
 /* HERO */
 .hero{
-  background:url('images/hero.jpg') center/cover no-repeat;
-  height:95vh;
-  display:flex;
-  align-items:center;
-  position:relative;
-  color:#fff;
+background:url('images/hero.jpg') center/cover no-repeat;
+height:100vh;
+display:flex;
+align-items:center;
+position:relative;
+color:#fff;
+padding-top:80px;
 }
 
 .hero::after{
-  content:'';
-  position:absolute;
-  width:100%;
-  height:100%;
-  top:0;
-  left:0;
-  background:rgba(0,0,0,0.75);
+content:'';
+position:absolute;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.75);
+top:0;
+left:0;
 }
 
 .hero-content{
-  position:relative;
-  z-index:2;
-  max-width:650px;
+position:relative;
+z-index:2;
 }
 
 .hero h1{
-  font-size:48px;
-  line-height:1.2;
-  margin-bottom:20px;
+font-size:36px;
+line-height:1.2;
+margin-bottom:20px;
 }
 
 .hero p{
-  font-size:18px;
-  margin-bottom:30px;
+font-size:16px;
+margin-bottom:25px;
 }
 
 .btn{
-  background:#6ac22f;
-  color:#fff;
-  padding:14px 30px;
-  text-decoration:none;
-  border-radius:6px;
-  font-weight:600;
-  transition:0.3s;
+background:#6ac22f;
+color:#fff;
+padding:12px 25px;
+border-radius:6px;
+text-decoration:none;
+display:inline-block;
+font-weight:600;
 }
 
-.btn:hover{
-  background:#4fa61a;
+/* SECTIONS */
+.section{
+padding:70px 0;
 }
 
 /* SERVICES */
-.section{
-  padding:80px 0;
+.service-box{
+background:#fff;
+padding:30px;
+border-radius:12px;
+margin-bottom:25px;
+box-shadow:0 5px 20px rgba(0,0,0,0.05);
 }
 
-.section-title{
-  text-align:center;
-  margin-bottom:50px;
+.service-number{
+color:#9ca3af;
+font-size:14px;
+margin-bottom:10px;
 }
 
-.section-title h2{
-  font-size:34px;
-  font-weight:700;
-}
-
-.cards{
-  display:flex;
-  gap:30px;
-  flex-wrap:wrap;
-}
-
-.card{
-  background:#fff;
-  padding:35px;
-  border-radius:10px;
-  flex:1;
-  min-width:280px;
-  box-shadow:0 10px 25px rgba(0,0,0,0.08);
-  transition:0.3s;
-}
-
-.card:hover{
-  transform:translateY(-5px);
-}
-
-.card h3{
-  margin-bottom:15px;
-  font-size:20px;
-  color:#0f172a;
+.service-box h3{
+margin-bottom:10px;
+font-size:20px;
 }
 
 /* ABOUT */
 .about{
-  display:flex;
-  gap:50px;
-  align-items:center;
-  flex-wrap:wrap;
+margin-top:20px;
+}
+
+.about h2{
+margin-bottom:15px;
+font-size:22px;
 }
 
 .about img{
-  width:100%;
-  max-width:450px;
-  border-radius:10px;
-  box-shadow:0 10px 25px rgba(0,0,0,0.1);
+width:100%;
+border-radius:10px;
+margin-top:20px;
 }
 
-/* CTA */
+/* INITIATIVES */
+.initiative{
+margin-bottom:25px;
+}
+
+.initiative h4{
+font-size:18px;
+margin-bottom:8px;
+}
+
+/* CTA GREEN */
 .cta{
-  background:#6ac22f;
-  color:#fff;
-  text-align:center;
-  padding:70px 30px;
-  border-radius:12px;
+background:#6ac22f;
+color:#fff;
+padding:50px 25px;
+border-radius:15px;
+text-align:center;
+margin:40px 0;
 }
 
 .cta h2{
-  font-size:32px;
-  margin-bottom:15px;
+font-size:24px;
+margin-bottom:15px;
 }
 
 /* STATS */
 .stats{
-  background:#fff;
-  padding:70px 0;
-  text-align:center;
+text-align:center;
+padding:60px 0;
 }
 
-.stats h2{
-  font-size:42px;
-  color:#6ac22f;
-  margin-bottom:10px;
+.stat{
+margin-bottom:30px;
+}
+
+.stat h2{
+font-size:32px;
+color:#6ac22f;
+}
+
+/* BLOG */
+.blog-card{
+background:#fff;
+border-radius:12px;
+overflow:hidden;
+margin-bottom:30px;
+box-shadow:0 5px 20px rgba(0,0,0,0.05);
+}
+
+.blog-card img{
+width:100%;
+display:block;
+}
+
+.blog-card-content{
+padding:20px;
+}
+
+.blog-card-content h4{
+margin-bottom:10px;
+}
+
+/* FINAL CTA */
+.final-cta{
+background:url('images/cta.jpg') center/cover no-repeat;
+padding:80px 20px;
+color:#fff;
+text-align:center;
+position:relative;
+}
+
+.final-cta::after{
+content:'';
+position:absolute;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.6);
+top:0;
+left:0;
+}
+
+.final-cta-content{
+position:relative;
+z-index:2;
 }
 
 /* FOOTER */
 footer{
-  background:#0f172a;
-  color:#ccc;
-  padding:50px 0;
-  text-align:center;
-  font-size:14px;
+background:#111827;
+color:#d1d5db;
+padding:50px 0;
+text-align:center;
 }
 
-/* MOBILE */
-@media(max-width:768px){
-  .hero h1{font-size:32px;}
-  .hero{height:85vh;}
-  .cards{flex-direction:column;}
-  .about{flex-direction:column;}
+footer h4{
+margin-bottom:15px;
+}
+
+footer ul{
+list-style:none;
+}
+
+footer ul li{
+margin-bottom:8px;
 }
 </style>
 </head>
@@ -216,12 +253,7 @@ footer{
 <div class="container">
 <nav>
 <h2>Medzone</h2>
-<div>
-<a href="#">Home</a>
-<a href="#">About</a>
-<a href="#">Services</a>
-<a href="#">Contact</a>
-</div>
+<div class="menu">☰</div>
 </nav>
 </div>
 </header>
@@ -229,68 +261,33 @@ footer{
 <section class="hero">
 <div class="container hero-content">
 <h1>Empowering Healthcare Compliance Solutions</h1>
-<p>Expert NABH Accreditation & Hospital Compliance Consultancy Services</p>
+<p>Expert guidance to hospitals and clinics in achieving NABH and regulatory compliance across India.</p>
 <a href="#" class="btn">Get Started</a>
 </div>
 </section>
 
-<section class="section">
-<div class="container">
-<div class="section-title">
-<h2>Our Core Services</h2>
-</div>
-<div class="cards">
-<div class="card">
-<h3>NABH Accreditation</h3>
-<p>Complete end-to-end NABH implementation for hospitals and dental centres including documentation, training and audit support.</p>
+<section class="section container">
+
+<div class="service-box">
+<div class="service-number">01</div>
+<h3>Expertise</h3>
+<p>Our seasoned consultants bring extensive knowledge in healthcare regulatory compliance and ensure quality standards.</p>
 </div>
 
-<div class="card">
-<h3>Medical Compliance</h3>
-<p>Clinical governance systems, SOP development, policy drafting and quality improvement frameworks.</p>
+<div class="service-box">
+<div class="service-number">02</div>
+<h3>Tailored Solutions</h3>
+<p>We provide customized solutions aligning with specific hospital needs and clinical standards.</p>
 </div>
 
-<div class="card">
-<h3>Documentation Support</h3>
-<p>Professional preparation of manuals, forms, registers and legal compliance documentation.</p>
+<div class="service-box">
+<div class="service-number">03</div>
+<h3>Comprehensive Support</h3>
+<p>From NABH implementation to quality systems, we offer complete end-to-end assistance.</p>
 </div>
-</div>
-</div>
+
 </section>
 
-<section class="section">
-<div class="container about">
-<div>
+<section class="section container about">
 <h2>About Medzone Healthcare Advisors</h2>
-<p>We specialize in structured healthcare compliance consulting helping institutions achieve NABH accreditation smoothly and efficiently through expert planning and system implementation.</p>
-</div>
-<img src="images/about.jpg" alt="About Medzone">
-</div>
-</section>
-
-<section class="section">
-<div class="container">
-<div class="cta">
-<h2>Take Action Today</h2>
-<p>Start your NABH Accreditation Journey with Professional Experts.</p>
-<br>
-<a href="#" class="btn">Contact Now</a>
-</div>
-</div>
-</section>
-
-<section class="stats">
-<div class="container">
-<h2>142,790+</h2>
-<p>Healthcare Beneficiaries Impacted Through Quality Systems</p>
-</div>
-</section>
-
-<footer>
-<div class="container">
-<p>© 2026 Medzone Healthcare Advisors | Zirakpur | 7888926396</p>
-</div>
-</footer>
-
-</body>
-</html>
+<p>Medzone Healthcare Advisors is committed to transforming healthcare institutions by delivering structured compliance systems and accreditation support
