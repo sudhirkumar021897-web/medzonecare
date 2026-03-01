@@ -140,6 +140,18 @@ margin-bottom:40px;
 color:var(--primary);
 }
 
+/* CTA */
+.cta{
+background:var(--primary);
+color:white;
+padding:60px 10%;
+text-align:center;
+}
+
+.cta h2{
+margin-bottom:20px;
+}
+
 /* WHY */
 .why-box{
 display:grid;
@@ -186,6 +198,13 @@ padding:20px;
 
 .service-content h3{
 margin-bottom:10px;
+}
+
+/* TESTIMONIAL */
+.testimonial{
+max-width:700px;
+margin:auto;
+font-style:italic;
 }
 
 /* FAQ */
@@ -250,6 +269,11 @@ width:60px;
 }
 
 @media(max-width:768px){
+
+nav{
+flex-direction:column;
+align-items:flex-start;
+}
 
 .menu-toggle{
 display:block;
@@ -316,10 +340,15 @@ font-size:30px;
 </div>
 </header>
 
+<section class="cta">
+<h2>Get NABH Ready with Expert Guidance</h2>
+<a href="#contact" class="btn">Schedule Free Consultation</a>
+</section>
+
 <section class="section">
 <h2>Why Choose Medzone?</h2>
 <div class="why-box">
-<div class="why-item">✔ NABH Accreditation & Entry Level Specialists</div>
+<div class="why-item">✔ NABH & Entry Level Specialists</div>
 <div class="why-item">✔ End-to-End Compliance Solutions</div>
 <div class="why-item">✔ Insurance & Government Panels</div>
 <div class="why-item">✔ Healthcare IT & Operational Support</div>
@@ -364,17 +393,14 @@ font-size:30px;
 
 <section class="section light-bg">
 <h2>Frequently Asked Questions</h2>
-
 <div class="faq-item">
 <h4>What is NABH Entry Level Accreditation?</h4>
 <p>It is a quality certification process for hospitals ensuring basic safety and care standards.</p>
 </div>
-
 <div class="faq-item">
 <h4>How long does NABH process take?</h4>
 <p>Typically 3–6 months depending on preparedness and documentation.</p>
 </div>
-
 </section>
 
 <section id="contact" class="section">
