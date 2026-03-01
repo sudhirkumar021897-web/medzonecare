@@ -1,18 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Medzone Health Care Advisors | One Zone For Healthcare</title>
 
 <meta name="description" content="Medzone Health Care Advisors provides NABH accreditation, hospital compliance, empanelment, Fire NOC, Pollution Control and healthcare IT solutions.">
-
-<meta property="og:title" content="Medzone Health Care Advisors">
-<meta property="og:description" content="NABH Accreditation, Hospital Compliance & Healthcare Consultancy.">
-<meta property="og:type" content="website">
-<meta property="og:image" content="https://medzonecare.com/images/logo.png">
 
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 
@@ -48,22 +42,15 @@ top:0;
 z-index:1000;
 }
 
-/* Prevent brand merging */
 .logo-area{
 display:flex;
 align-items:center;
 gap:15px;
 color:white;
-flex:1;
-min-width:0;
 }
 
 .logo-area img{
 height:55px;
-}
-
-.brand-text{
-white-space:nowrap;
 }
 
 .brand-text h1{
@@ -78,7 +65,6 @@ font-weight:600;
 font-size:14px;
 }
 
-/* MENU */
 nav ul{
 display:flex;
 list-style:none;
@@ -92,13 +78,11 @@ font-size:14px;
 letter-spacing:1px;
 }
 
-/* MOBILE TOGGLE */
 .menu-toggle{
 display:none;
 font-size:28px;
 color:white;
 cursor:pointer;
-margin-left:20px;
 }
 
 /* HERO */
@@ -138,39 +122,19 @@ display:inline-block;
 }
 
 /* SECTION */
-.section{padding:100px 10%;text-align:center;}
-.light-bg{background:var(--light);}
+.section{
+padding:100px 10%;
+text-align:center;
+}
+
+.light-bg{
+background:var(--light);
+}
 
 .section h2{
 font-family:'Playfair Display',serif;
 font-size:40px;
 margin-bottom:50px;
-color:var(--primary);
-}
-
-/* WHY CHOOSE */
-.why-box{
-display:grid;
-grid-template-columns:repeat(4,1fr);
-gap:30px;
-}
-
-.why-item{
-background:white;
-padding:25px;
-border-radius:10px;
-box-shadow:0 10px 25px rgba(0,0,0,0.08);
-}
-
-/* FAQ */
-.faq-item{
-max-width:800px;
-margin:20px auto;
-text-align:left;
-}
-
-.faq-item h4{
-margin-bottom:10px;
 color:var(--primary);
 }
 
@@ -185,15 +149,13 @@ gap:35px;
 background:white;
 border-radius:10px;
 box-shadow:0 10px 25px rgba(0,0,0,0.08);
-overflow:hidden;
+padding:30px;
 transition:0.3s;
 }
 
-.service-card:hover{transform:translateY(-6px);}
-.service-card img{width:100%;height:220px;object-fit:cover;}
-.service-content{padding:25px;}
-.service-content h3{font-size:22px;margin-bottom:12px;color:var(--primary);}
-.service-content p{font-size:15px;}
+.service-card:hover{
+transform:translateY(-6px);
+}
 
 /* ABOUT */
 .about-content{
@@ -215,7 +177,6 @@ padding:12px;
 margin-bottom:15px;
 border:1px solid #ccc;
 border-radius:5px;
-font-family:'Poppins';
 }
 
 .contact-form button{
@@ -240,34 +201,22 @@ position:fixed;
 bottom:25px;
 right:25px;
 z-index:1000;
-}
-
-.whatsapp-float img{
-width:60px;
-height:60px;
-transition:0.3s;
-}
-
-.whatsapp-float img:hover{
-transform:scale(1.1);
+background:#25D366;
+color:white;
+padding:12px 18px;
+border-radius:50px;
+text-decoration:none;
+font-weight:600;
 }
 
 /* RESPONSIVE */
 @media(max-width:992px){
 .services{grid-template-columns:repeat(2,1fr);}
-.why-box{grid-template-columns:repeat(2,1fr);}
 }
 
 @media(max-width:768px){
 
-.menu-toggle{
-display:block;
-margin-left:auto;
-}
-
-nav{
-flex-wrap:wrap;
-}
+.menu-toggle{display:block;}
 
 nav ul{
 position:absolute;
@@ -291,12 +240,12 @@ nav ul li{
 margin:15px 0;
 }
 
-.services{grid-template-columns:1fr;}
-.why-box{grid-template-columns:1fr;}
-.hero h2{font-size:30px;}
+.services{
+grid-template-columns:1fr;
+}
 
-.brand-text h1{
-font-size:18px;
+.hero h2{
+font-size:30px;
 }
 
 }
@@ -333,43 +282,81 @@ font-size:18px;
 </div>
 </header>
 
-<!-- SERVICES (unchanged — your full 6 services remain here exactly as before) -->
+<section id="services" class="section light-bg">
+<h2>Our Comprehensive Healthcare Services</h2>
 
-<!-- WHY SECTION (exists but not in menu) -->
-<section id="why" class="section">
-<h2>Why Choose Medzone?</h2>
-<div class="why-box">
-<div class="why-item">✔ NABH Accreditation & Entry Level Specialists</div>
-<div class="why-item">✔ End-to-End Compliance Solutions</div>
-<div class="why-item">✔ Insurance & Government Empanelment Experts</div>
-<div class="why-item">✔ Healthcare IT & Operational Excellence</div>
+<div class="services">
+
+<div class="service-card">
+<h3>Accreditation Excellence</h3>
+<p>NABH Entry Level, Full NABH, NABL and ISO certifications with structured documentation and audit readiness.</p>
+</div>
+
+<div class="service-card">
+<h3>Strategic Empanelment Support</h3>
+<p>Insurance, CGHS, ECHS, Ayushman Bharat and government panel documentation & approvals.</p>
+</div>
+
+<div class="service-card">
+<h3>Legal and Compliance Support</h3>
+<p>Fire NOC, Pollution Control Board, biomedical waste authorization and statutory healthcare registrations.</p>
+</div>
+
+<div class="service-card">
+<h3>Hospital Planning & Infrastructure</h3>
+<p>Architectural layout compliance, infrastructure structuring and healthcare facility consultancy.</p>
+</div>
+
+<div class="service-card">
+<h3>Operational & Financial Strength</h3>
+<p>TPA billing outsourcing, revenue cycle management and financial process optimization.</p>
+</div>
+
+<div class="service-card">
+<h3>Healthcare IT & Systems</h3>
+<p>Hospital Information Management Systems, digital patient records and automation solutions.</p>
+</div>
+
 </div>
 </section>
 
-<!-- ABOUT -->
-<!-- (unchanged content remains here) -->
-
-<!-- FAQ (exists but not in menu) -->
-<section id="faq" class="section light-bg">
-<h2>Frequently Asked Questions</h2>
-<div class="faq-item">
-<h4>How long does NABH accreditation take?</h4>
-<p>Generally 3–6 months depending on documentation and preparedness.</p>
-</div>
-<div class="faq-item">
-<h4>Do you assist with Fire NOC & Pollution approvals?</h4>
-<p>Yes, we provide complete assistance for Fire, Pollution Control Board and biomedical waste approvals.</p>
-</div>
-<div class="faq-item">
-<h4>Do you support hospital IT systems?</h4>
-<p>Yes, we assist in implementing Hospital Information Management Systems and digital compliance solutions.</p>
+<section id="about" class="section">
+<h2>About Medzone</h2>
+<div class="about-content">
+<p>
+Medzone Health Care Advisors is a specialized healthcare consultancy providing structured accreditation, compliance and operational solutions for hospitals and healthcare institutions. We ensure hospitals remain audit-ready, compliant and growth-focused through systematic documentation, regulatory expertise and strategic planning.
+</p>
 </div>
 </section>
 
-<!-- CONTACT + FOOTER remain unchanged -->
+<section id="contact" class="section light-bg">
+<h2>Contact Us</h2>
 
-<a href="https://wa.me/917888926396?text=Hello%20Medzone%20Health%20Care%20Advisors,%20I%20would%20like%20to%20know%20about%20your%20services." class="whatsapp-float" target="_blank">
-<img src="images/whatsapp.png" alt="WhatsApp">
+<div class="contact-form">
+<form action="https://formsubmit.co/medzonehealthcareadvisors@gmail.com" method="POST">
+<input type="text" name="name" placeholder="Your Name" required>
+<input type="email" name="email" placeholder="Your Email" required>
+<textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+<button type="submit">Submit</button>
+</form>
+</div>
+
+<p style="margin-top:30px;">
+📞 +91 78889 26396<br>
+📍 Zirakpur | Punjab<br>
+✉ medzonehealthcareadvisors@gmail.com
+</p>
+
+</section>
+
+<footer>
+<h3>Medzone Health Care Advisors</h3>
+<p><strong>"One Zone For Healthcare"</strong></p>
+<p>© 2026 All Rights Reserved</p>
+</footer>
+
+<a href="https://wa.me/917888926396?text=Hello%20Medzone%20Health%20Care%20Advisors,%20I%20would%20like%20to%20know%20about%20your%20services." class="whatsapp-float">
+WhatsApp
 </a>
 
 <script>
