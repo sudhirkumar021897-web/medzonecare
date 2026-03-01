@@ -5,32 +5,34 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Medzone Health Care Advisors | One Zone For Healthcare</title>
 
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
 <style>
+
 :root{
---primary-red:#cc0000;
---black:#000000;
+--gold:#d4af37;
+--black:#0b0b0b;
 --white:#ffffff;
---grey:#555;
 }
 
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:'Segoe UI', Arial, sans-serif;
 }
 
 body{
-background:#f9f9f9;
-color:var(--grey);
+font-family:'Poppins',sans-serif;
+background:var(--black);
+color:var(--white);
 line-height:1.8;
-font-size:19px;
 }
 
 /* NAVBAR */
 nav{
-background:var(--black);
-padding:15px 6%;
+background:rgba(0,0,0,0.9);
+padding:15px 7%;
 display:flex;
 justify-content:space-between;
 align-items:center;
@@ -45,31 +47,25 @@ align-items:center;
 }
 
 .logo-area img{
-height:50px;
-margin-right:12px;
-}
-
-.brand-text{
-color:var(--white);
-text-align:left;
+height:55px;
+margin-right:15px;
 }
 
 .brand-text h1{
-font-size:22px;
-font-weight:700;
+font-family:'Playfair Display',serif;
+font-size:24px;
 }
 
 .brand-text p{
-font-size:15px;
-font-weight:bold;
+font-weight:600;
+color:var(--gold);
 text-align:center;
-color:var(--primary-red);
 margin-top:4px;
 }
 
 nav ul{
-list-style:none;
 display:flex;
+list-style:none;
 }
 
 nav ul li{
@@ -77,38 +73,39 @@ margin-left:25px;
 }
 
 nav ul li a{
-color:var(--white);
 text-decoration:none;
+color:var(--white);
 font-size:14px;
-letter-spacing:1px;
 text-transform:uppercase;
+letter-spacing:1px;
 }
 
 nav ul li a:hover{
-color:var(--primary-red);
+color:var(--gold);
 }
 
 /* HERO */
 .hero{
-background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
-url('https://images.unsplash.com/photo-1580281657527-47a58b655d5d?auto=format&fit=crop&w=2000&q=80');
+height:95vh;
+background:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),
+url('https://images.unsplash.com/photo-1504439904031-93ded9f93e4e?auto=format&fit=crop&w=2000&q=80');
 background-size:cover;
 background-position:center;
-height:90vh;
 display:flex;
 align-items:center;
 padding:0 8%;
-color:var(--white);
+text-align:left;
 }
 
 .hero-content{
-max-width:700px;
+max-width:750px;
 }
 
 .hero h2{
-font-size:46px;
+font-family:'Playfair Display',serif;
+font-size:52px;
 margin-bottom:20px;
-line-height:1.2;
+color:var(--gold);
 }
 
 .hero p{
@@ -117,18 +114,16 @@ margin-bottom:30px;
 }
 
 .btn{
-background:var(--primary-red);
-color:var(--white);
-padding:15px 32px;
+background:var(--gold);
+color:var(--black);
+padding:15px 35px;
 text-decoration:none;
-border-radius:5px;
-font-weight:bold;
-font-size:16px;
-transition:0.3s;
+font-weight:600;
+border-radius:4px;
 }
 
 .btn:hover{
-background:#a80000;
+background:#b9972f;
 }
 
 /* SECTION */
@@ -138,29 +133,29 @@ text-align:center;
 }
 
 .section h2{
-font-size:34px;
-margin-bottom:25px;
-color:var(--black);
+font-family:'Playfair Display',serif;
+font-size:40px;
+margin-bottom:50px;
+color:var(--gold);
 }
 
-/* SERVICES */
+/* SERVICES GRID */
 .services{
 display:grid;
 grid-template-columns:repeat(3,1fr);
 gap:35px;
-margin-top:50px;
 }
 
 .service-card{
-background:var(--white);
+background:#111;
 padding:25px;
 border-radius:8px;
-box-shadow:0 5px 15px rgba(0,0,0,0.08);
+box-shadow:0 0 25px rgba(212,175,55,0.1);
 transition:0.3s;
 }
 
 .service-card:hover{
-transform:translateY(-6px);
+transform:translateY(-8px);
 }
 
 .service-card img{
@@ -172,33 +167,33 @@ margin-bottom:20px;
 }
 
 .service-card h3{
-font-size:22px;
-color:var(--black);
+color:var(--gold);
 margin-bottom:15px;
+font-size:22px;
 }
 
 /* FOOTER */
 footer{
-background:var(--black);
-color:var(--white);
-padding:60px 10% 25px 10%;
+background:#000;
+padding:70px 10% 30px;
 text-align:center;
 }
 
 footer h3{
-font-size:20px;
-margin-bottom:10px;
+font-family:'Playfair Display',serif;
+color:var(--gold);
+font-size:24px;
+margin-bottom:15px;
 }
 
 footer p{
-font-size:16px;
-opacity:0.85;
+margin-bottom:8px;
 }
 
 .copyright{
 margin-top:30px;
-font-size:14px;
 opacity:0.6;
+font-size:14px;
 }
 
 /* RESPONSIVE */
@@ -209,22 +204,17 @@ grid-template-columns:repeat(2,1fr);
 }
 
 @media(max-width:768px){
-nav ul{
-display:none;
-}
-
-.hero{
-height:75vh;
-}
-
 .hero h2{
-font-size:30px;
+font-size:32px;
 }
-
 .services{
 grid-template-columns:1fr;
 }
+nav ul{
+display:none;
 }
+}
+
 </style>
 </head>
 
@@ -235,13 +225,11 @@ grid-template-columns:1fr;
 <img src="images/logo.png" alt="Medzone Logo">
 <div class="brand-text">
 <h1>Medzone Health Care Advisors</h1>
-<p>"One Zone For Healthcare"</p>
+<p><strong>"One Zone For Healthcare"</strong></p>
 </div>
 </div>
-
 <ul>
 <li><a href="#">Home</a></li>
-<li><a href="#">About</a></li>
 <li><a href="#">Services</a></li>
 <li><a href="#">Contact</a></li>
 </ul>
@@ -249,33 +237,52 @@ grid-template-columns:1fr;
 
 <header class="hero">
 <div class="hero-content">
-<h2>Empowering Healthcare Compliance & Accreditation Excellence</h2>
-<p>Professional NABH consultancy for hospitals, clinics, and dental centres. We design structured compliance systems that ensure sustainable healthcare quality standards.</p>
-<a href="#" class="btn">Start Your Accreditation Journey</a>
+<h2>Healthcare Compliance Is Not an Option. It Is a Responsibility.</h2>
+<p>Structured systems. Audit-ready frameworks. Assured approvals.  
+Your strategic partner for accreditation, empanelment, compliance, and operational excellence.</p>
+<a href="#" class="btn">Start Your Compliance Journey</a>
 </div>
 </header>
 
 <section class="section">
-<h2>Our Core Consultancy Services</h2>
+<h2>Our Comprehensive Services</h2>
 
 <div class="services">
 
 <div class="service-card">
 <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=800&q=80">
-<h3>NABH Entry Level Accreditation</h3>
-<p>End-to-end documentation, training, gap analysis, and implementation support for first-time accreditation hospitals.</p>
+<h3>Accreditation Excellence</h3>
+<p>NABH Entry Level, Full NABH, NABH for Labs, NABL for Labs & ISO Certifications.</p>
 </div>
 
 <div class="service-card">
-<img src="https://images.unsplash.com/photo-1580281657527-47a58b655d5d?auto=format&fit=crop&w=800&q=80">
-<h3>Full NABH Accreditation</h3>
-<p>Comprehensive quality system development, SOP creation, mock audits, and assessment preparation for advanced accreditation.</p>
+<img src="https://images.unsplash.com/photo-1550831107-1553da8c8464?auto=format&fit=crop&w=800&q=80">
+<h3>Strategic Empanelment Support</h3>
+<p>Insurance Empanelments, Ayushman Bharat, Himcare, State Government Panels, CGHS, ECHS, ESI.</p>
+</div>
+
+<div class="service-card">
+<img src="https://images.unsplash.com/photo-1581093458791-9d42b6c2fda8?auto=format&fit=crop&w=800&q=80">
+<h3>Legal & Fire Compliance</h3>
+<p>Fire NOC, Pollution Board Compliance, Hospital Registrations & Regulatory Documentation.</p>
+</div>
+
+<div class="service-card">
+<img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80">
+<h3>Build Smart. Operate Strong.</h3>
+<p>Architectural Designing, Layout Planning, Hospital Software (HIMS), Compliance Structuring.</p>
+</div>
+
+<div class="service-card">
+<img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=800&q=80">
+<h3>Operational & Financial Strength</h3>
+<p>TPA Billing Outsourcing, Documentation Structuring & Process Optimization.</p>
 </div>
 
 <div class="service-card">
 <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80">
-<h3>Dental NABH Consultancy</h3>
-<p>Specialized accreditation framework design and compliance systems tailored for dental clinics and day-care centres.</p>
+<h3>End-to-End Healthcare Setup</h3>
+<p>Everything your healthcare facility needs — under one strategic partner.</p>
 </div>
 
 </div>
@@ -284,7 +291,9 @@ grid-template-columns:1fr;
 <footer>
 <h3>Medzone Health Care Advisors</h3>
 <p><strong>"One Zone For Healthcare"</strong></p>
-<p>📍 Zirakpur | 📞 7888926396 | ✉ medzonehealthcare@gmail.com</p>
+<p>📞 +91 78889 26396</p>
+<p>📍 Zirakpur | Punjab</p>
+<p>✉ medzonehealthcareadvisors@gmail.com</p>
 
 <div class="copyright">
 © 2026 Medzone Health Care Advisors. All Rights Reserved.
