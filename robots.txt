@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://medzonecare.com/sitemap.xml
