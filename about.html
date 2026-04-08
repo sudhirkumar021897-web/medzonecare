@@ -25,14 +25,12 @@ font-family:'Poppins',sans-serif;
 color:var(--text);
 line-height:1.7;
 background:white;
-
-/* Sticky footer fix */
 display:flex;
 flex-direction:column;
 min-height:100vh;
 }
 
-/* NAVBAR (MATCH HOMEPAGE) */
+/* NAVBAR */
 nav{
 background:var(--primary);
 padding:18px 8%;
@@ -71,7 +69,6 @@ font-weight:600;
 font-size:14px;
 }
 
-/* NAV LINKS FIX */
 nav ul{
 display:flex;
 list-style:none;
@@ -198,8 +195,6 @@ margin-top:auto;
 
 .stats{grid-template-columns:1fr;}
 
-.hero h2{font-size:30px;}
-
 .brand-text h1{font-size:18px;}
 
 .menu-toggle{
@@ -258,9 +253,7 @@ animation-duration:35s;
 </ul>
 </nav>
 
-<h1>About</h1>
-<section class="section">
-
+<!-- ABOUT SECTION -->
 <section class="section light-bg">
 
 <h2>About Medzone Health Care Advisors</h2>
@@ -282,6 +275,8 @@ With a commitment to excellence, Medzone has been successfully guiding healthcar
 </div>
 
 </section>
+
+<!-- CERTIFICATIONS -->
 <section class="section">
 
 <h2>Certifications & Compliance</h2>
@@ -303,14 +298,16 @@ Additionally, the founder is a certified Lead Auditor for:
 </p>
 
 <ul style="text-align:left; max-width:700px; margin:20px auto; line-height:1.8;">
-<li>✔ ISO 9001:2015 – Quality Management System</li>
-<li>✔ ISO 14001:2015 – Environmental Management System</li>
-<li>✔ ISO 45001:2018 – Occupational Health & Safety Management System</li>
+<li>✔ ISO 9001:2015</li>
+<li>✔ ISO 14001:2015</li>
+<li>✔ ISO 45001:2018</li>
 </ul>
 
 </div>
 
 </section>
+
+<!-- VISION -->
 <section class="section light-bg">
 
 <h2>Our Vision & Mission</h2>
@@ -337,6 +334,7 @@ To simplify healthcare regulations and empower hospitals with structured systems
 </section>
 
 <!-- STATS -->
+<section class="section">
 <div class="stats">
 
 <div class="stat">
@@ -360,9 +358,9 @@ To simplify healthcare regulations and empower hospitals with structured systems
 </div>
 
 </div>
-
 </section>
 
+<!-- CLIENTS -->
 <section class="section light-bg">
 <h2>Our Clients</h2>
 <p>Trusted by healthcare institutions across India</p>
@@ -385,7 +383,6 @@ To simplify healthcare regulations and empower hospitals with structured systems
 <p>LifeLine Clinic</p>
 </div>
 
-<!-- duplicate for smooth loop -->
 <div class="slide">
 <img src="images/client1.png">
 <p>ABC Hospital</p>
@@ -412,10 +409,8 @@ To simplify healthcare regulations and empower hospitals with structured systems
 <p>© 2026 All Rights Reserved</p>
 </footer>
 
-<!-- COUNTER SCRIPT -->
 <script>
 const counters = document.querySelectorAll('.counter');
-
 counters.forEach(counter => {
 const target = +counter.getAttribute('data-target');
 const duration = 2500;
@@ -432,12 +427,10 @@ requestAnimationFrame(animate);
 counter.innerText = target + "+";
 }
 }
-
 requestAnimationFrame(animate);
 });
 </script>
 
-<!-- NAV SCRIPT -->
 <script>
 const navLinks = document.getElementById("nav-links");
 
