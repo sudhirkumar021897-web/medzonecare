@@ -187,22 +187,22 @@ Our goal is to simplify complex healthcare regulations and provide end-to-end so
 <div class="stats">
 
 <div class="stat">
-<h3>120+</h3>
+<h3 class="counter" data-target="120">0</h3>
 <p>Hospitals Served</p>
 </div>
 
 <div class="stat">
-<h3>70+</h3>
+<h3 class="counter" data-target="70">0</h3>
 <p>NABH Projects</p>
 </div>
 
 <div class="stat">
-<h3>50+</h3>
+<h3 class="counter" data-target="50">0</h3>
 <p>Empanelments</p>
 </div>
 
 <div class="stat">
-<h3>10+</h3>
+<h3 class="counter" data-target="10">0</h3>
 <p>States Covered</p>
 </div>
 
@@ -263,6 +263,28 @@ Our goal is to simplify complex healthcare regulations and provide end-to-end so
 <p>"One Zone For Healthcare"</p>
 <p>© 2026 All Rights Reserved</p>
 </footer>
+<script>
+const counters = document.querySelectorAll('.counter');
 
+counters.forEach(counter => {
+counter.innerText = '0';
+
+const updateCounter = () => {
+const target = +counter.getAttribute('data-target');
+const current = +counter.innerText;
+
+const increment = target / 100;
+
+if(current < target){
+counter.innerText = `${Math.ceil(current + increment)}`;
+setTimeout(updateCounter, 20);
+} else {
+counter.innerText = target + "+";
+}
+};
+
+updateCounter();
+});
+</script>
 </body>
 </html>
