@@ -162,12 +162,21 @@ animation-duration:35s;
 
 <nav>
 <div class="logo-area">
-<img src="images/logo.png">
+<img src="images/logo.png" alt="Medzone Logo">
 <div class="brand-text">
 <h1>Medzone Health Care Advisors</h1>
-<p>"One Zone For Healthcare"</p>
+<p><strong>"One Zone For Healthcare"</strong></p>
 </div>
 </div>
+
+<div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+<ul id="nav-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="index.html#services">Services</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="index.html#contact">Contact</a></li>
+</ul>
 </nav>
 
 <section class="section">
@@ -291,6 +300,19 @@ counter.innerText = target + "+";
 }
 
 requestAnimationFrame(animate);
+});
+</script>
+<script>
+const navLinks = document.getElementById("nav-links");
+
+function toggleMenu(){
+navLinks.classList.toggle("show");
+}
+
+document.querySelectorAll("#nav-links a").forEach(link => {
+link.addEventListener("click", () => {
+navLinks.classList.remove("show");
+});
 });
 </script>
 </body>
